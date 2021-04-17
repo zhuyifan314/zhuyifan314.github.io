@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Gridea | Gridea</title>
+<title>亿些编译错误 | Gridea</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,7 +18,11 @@
 
 
 
-    <meta name="description" content="温故而知新">
+    <meta name="description" content="写代码时经常会遇到亿些奇奇怪怪的编译错误，记录下来，下次遇到时能知道发生了甚么，同时也给有相同问题的人一个帮助。
+一、
+编译信息：
+[Error] assignment of member 'node::id' in read-only o..." />
+    <meta name="keywords" content="总结" />
   </head>
   <body>
     <div id="app" class="main">
@@ -88,35 +92,53 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: Gridea</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://zhuyifan314.github.io/post/hello-gridea/">
-                  <h2 class="post-title">Hello Gridea</h2>
-                </a>
-                <div class="post-date">
-                  2018-12-12
-                </div>
-                <div class="post-abstract">
-                  <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+          <div class="post-detail">
+            <h2 class="post-title">亿些编译错误</h2>
+            <div class="post-date">2021-04-18</div>
+            
+            <div class="post-content" v-pre>
+              <p>写代码时经常会遇到亿些奇奇怪怪的编译错误，记录下来，下次遇到时能知道发生了甚么，同时也给有相同问题的人一个帮助。</p>
+<p>一、</p>
+<p><strong>编译信息</strong>：</p>
+<p><code>[Error] assignment of member 'node::id' in read-only object</code></p>
+<p><strong>错误原因</strong>：</p>
+<p>在使用 multiset 的时候，想改变其元素的值。</p>
+<p>因为 multiset 中的元素是 <strong>只读</strong> 的，不能直接修改。</p>
+<p><strong>解决方案</strong>：</p>
+<p>在 <code>multiset</code> 中删去原先元素，再插入修改后的元素。</p>
+<hr>
+<p>二、</p>
+<p><strong>编译信息</strong>：</p>
+<p><code>[Warning] unused variable 'XXX' [-Wunused-variable]</code></p>
+<p><strong>错误原因</strong>：</p>
+<p>愿因居然是因为定义了变量 <code>XXX</code> 但是却没用到它（<s>编译器管这么宽，我爱定义就定义</s>）。不过也是因为我调了编译设置的原因，一般应该不会这样。</p>
+<p><strong>解决方案</strong>：</p>
+<p>把变量 <code>XXX</code> 删去即可；或是调用它。</p>
 
-                </div>
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://zhuyifan314.github.io/tag/EoQV368Tt/" class="tag">
+                    总结
+                  </a>
+                
               </div>
-              
-                <a class="right" href="https://zhuyifan314.github.io/post/hello-gridea/">
-                  <div class="feature-container" style="background-image: url('https://zhuyifan314.github.io/post-images/hello-gridea.png')">
-                  </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zhuyifan314.github.io/post/tu-lun-qi-yuan-ou-la-tu-de-xiang-guan-wen-ti/">
+                  <h3 class="post-title">
+                    图论起源——欧拉图的相关问题
+                  </h3>
                 </a>
-              
-            </article>
-          
+              </div>
+            
 
-          <div class="pagination-container">
-  
-  
-</div>
+            
+
+          </div>
 
         </div>
       </div>

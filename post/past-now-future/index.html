@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Past       Now       Future            | Gridea</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zhuyifan314.github.io/favicon.ico?v=1618702932121">
+<link rel="stylesheet" href="https://zhuyifan314.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="4.18
+
+
+上午：复习这周学过的内容、学组合计数（把容斥题单做完，学挑战编程中组合计数的内容）
+
+
+下午：做组合计数题目
+
+
+晚上：打一场 cf（至少做四题）
+
+
+备忘录
+
+
+关于 置顶级别：
+总结：101010 ∼8\sim 8∼8
+学..." />
+    <meta name="keywords" content="总结" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zhuyifan314.github.io">
+        <img src="https://zhuyifan314.github.io/images/avatar.png?v=1618702932121" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zhuyifan314.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Past       Now       Future           </h2>
+            <div class="post-date">2021-02-23</div>
+            
+            <div class="post-content" v-pre>
+              <h2 id="418">4.18</h2>
+<ul>
+<li>
+<p>上午：复习这周学过的内容、学组合计数（把容斥题单做完，学挑战编程中组合计数的内容）</p>
+</li>
+<li>
+<p>下午：做组合计数题目</p>
+</li>
+<li>
+<p>晚上：打一场 cf（至少做四题）</p>
+</li>
+</ul>
+<h2 id="备忘录"><em>备忘录</em></h2>
+<ul>
+<li>
+<p>关于 <strong>置顶级别</strong>：</p>
+<p>总结：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>10</mn></mrow><annotation encoding="application/x-tex">10</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">0</span></span></span></span> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∼</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">\sim 8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">∼</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">8</span></span></span></span></p>
+<p>学习笔记：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>7</mn><mo>∼</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">7 \sim 5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">7</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∼</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">5</span></span></span></span></p>
+<p>题解：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span></p>
+</li>
+<li>
+<p>吃药</p>
+</li>
+</ul>
+<h2 id="future-plan"><em>Future</em>  <em>Plan</em></h2>
+<ul>
+<li>
+<p>学了一些知识点后题目刷的还是不够，掌握不扎实</p>
+</li>
+<li>
+<p>总结一些题型和转化方法</p>
+</li>
+<li>
+<p>写一篇日报</p>
+</li>
+<li>
+<p>学了新东西后写博客</p>
+</li>
+<li>
+<p>每天刷 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>5</mn></mrow><annotation encoding="application/x-tex">5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">5</span></span></span></span> 道题（完全自己写的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>5</mn></mrow><annotation encoding="application/x-tex">5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">5</span></span></span></span> 题），慢不要紧，一定要提升思维含量</p>
+</li>
+<li>
+<p>比赛至少在前十</p>
+</li>
+<li>
+<p>刷洛谷的题单</p>
+</li>
+<li>
+<p>每天一场 CF 并订正满</p>
+</li>
+</ul>
+<h2 id="417">4.17</h2>
+<ul>
+<li>
+<p>补 cf</p>
+</li>
+<li>
+<p>模拟赛</p>
+</li>
+</ul>
+<h2 id="416">4.16</h2>
+<ul>
+<li>
+<p>之前调 cf 的题（调了一题）</p>
+</li>
+<li>
+<p>模拟赛（没有）</p>
+</li>
+<li>
+<p>下午调好之后学组合计数</p>
+</li>
+<li>
+<p>调题和学组合计数</p>
+</li>
+</ul>
+<h2 id="415"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>4.15</mn></mrow><annotation encoding="application/x-tex">4.15</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span><span class="mord">.</span><span class="mord">1</span><span class="mord">5</span></span></span></span></h2>
+<ul>
+<li>
+<p>补完前天的 cf（有tm没补完）</p>
+</li>
+<li>
+<p>学完 prufer 序列（学完了）</p>
+</li>
+<li>
+<p>继续学接下来的组合计数（学了）</p>
+</li>
+<li>
+<p>打一场cf（打了）</p>
+</li>
+</ul>
+<h2 id="414">4.14</h2>
+<ul>
+<li>
+<p>昨天的 cf 补完（总结）忘补了</p>
+</li>
+<li>
+<p>组合计数学下去（目前在学 prufer 序列，一定要学精，考试时能用上）</p>
+</li>
+</ul>
+<h2 id="412"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>4.12</mn></mrow><annotation encoding="application/x-tex">4.12</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span><span class="mord">.</span><span class="mord">1</span><span class="mord">2</span></span></span></span></h2>
+<ul>
+<li>
+<p>补 ABC 的题目</p>
+</li>
+<li>
+<p>上课（whk、oi）</p>
+</li>
+<li>
+<p>一场 CF、一场 ABC（一定要做出前三题）</p>
+</li>
+</ul>
+<h2 id="410">4.10</h2>
+<ul>
+<li>
+<p>把昨天的题目搞懂</p>
+</li>
+<li>
+<p>做题目（十道）</p>
+</li>
+</ul>
+<h2 id="49">4.9</h2>
+<ul>
+<li>做了二次剩余模板</li>
+</ul>
+<h2 id="48">4.8</h2>
+<ul>
+<li>
+<p>三道作业题(over)</p>
+</li>
+<li>
+<p>一场 cf(打了a，b)</p>
+</li>
+<li>
+<p>长链剖分（hotel）——没学</p>
+</li>
+</ul>
+<h2 id="47">4.7</h2>
+<ul>
+<li>
+<p>用 CWT 的方法过一遍Pollard-Rho算法（咕了）</p>
+</li>
+<li>
+<p>学原根、二次剩余（学了原根，感觉还不错，应该回答了）</p>
+</li>
+<li>
+<p>长链剖分（没学）</p>
+</li>
+<li>
+<p>打了模拟赛，rk10，勉强稳住，但其实这都是简单题，自己以为很难，都不仔细想</p>
+</li>
+</ul>
+<h2 id="46">4.6</h2>
+<ul>
+<li>数论入坟</li>
+</ul>
+<h2 id="45">4.5</h2>
+<ul>
+<li>
+<p>作业各一题(进阶写了一题)</p>
+</li>
+<li>
+<p>树链剖分三题（写了三题）</p>
+</li>
+<li>
+<p>学点分治（省选算法，还不是很懂）</p>
+</li>
+<li>
+<p>打 CF（我是 sb）</p>
+</li>
+</ul>
+<h2 id="331">3.31</h2>
+<ul>
+<li>
+<p>模拟赛（很差）</p>
+</li>
+<li>
+<p>补题</p>
+</li>
+<li>
+<p>树链剖分</p>
+</li>
+<li>
+<p>昨天的 CF 打满（打了前五题）</p>
+</li>
+</ul>
+<h2 id="330">3.30</h2>
+<ul>
+<li>
+<p>线段树的题目还要再做一些（<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span></span></span></span> 题）</p>
+</li>
+<li>
+<p>树上问题（树链剖分）（做了模板题）</p>
+</li>
+<li>
+<p>打一场 CF（时间不够，只做了 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span>，主要是还写了题解）</p>
+</li>
+</ul>
+<h2 id="329">3.29</h2>
+<ul>
+<li>
+<p>做了些线段树的题</p>
+</li>
+<li>
+<p>下午学了树上问题，都是一些比较基础的内容</p>
+</li>
+<li>
+<p>晚上打了一场 ABC（VP），做满了，不过还是因为题目简单</p>
+</li>
+</ul>
+<h2 id="328">3.28</h2>
+<ul>
+<li>线段树</li>
+</ul>
+<h2 id="322">3.22</h2>
+<ul>
+<li>
+<p>可以按照题单做。</p>
+</li>
+<li>
+<p>要复习。</p>
+</li>
+</ul>
+<h2 id="318-~-321">3.18 ~ 3.21</h2>
+<ul>
+<li>这几天都在刷题。</li>
+</ul>
+<h2 id="317">3.17</h2>
+<ul>
+<li>
+<p>考前看比赛总结</p>
+</li>
+<li>
+<p>模拟赛（前十，锻炼了思维能力，一定会有成果，一定要积极思考）</p>
+</li>
+<li>
+<p>锻炼思维能力</p>
+</li>
+<li>
+<p>修改昨天的博客，投稿日报</p>
+</li>
+</ul>
+<h2 id="316">3.16</h2>
+<ul>
+<li>
+<p>下午做题</p>
+</li>
+<li>
+<p>贪心（写了篇博客，再修修可以再投日报）</p>
+</li>
+<li>
+<p>一定要静下心来</p>
+</li>
+</ul>
+<h2 id="315">3.15</h2>
+<ul>
+<li>
+<p>学习蓝书，图论（早）</p>
+</li>
+<li>
+<p>听课，贪心（中）</p>
+</li>
+<li>
+<p>调剩下的题（晚）</p>
+</li>
+</ul>
+<h2 id="314">3.14</h2>
+<ul>
+<li>
+<p>正式进入 <strong>独立思考</strong> 阶段</p>
+</li>
+<li>
+<p>做了</p>
+</li>
+</ul>
+<h2 id="313">3.13</h2>
+<ul>
+<li>
+<p>有模拟赛</p>
+</li>
+<li>
+<p>连通性问题（题单 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span> 题）</p>
+</li>
+<li>
+<p>绿题 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span></span></span></span> 道</p>
+</li>
+</ul>
+<h2 id="312">3.12</h2>
+<ul>
+<li>
+<p>连通性相关 题单（<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span> 题）</p>
+</li>
+<li>
+<p>思维锻炼（两题）</p>
+</li>
+<li>
+<p>学了强连通分量的tarjan做法</p>
+</li>
+</ul>
+<h2 id="311">3.11</h2>
+<ul>
+<li>
+<p>学最小生成树 prim 的堆优化</p>
+<p><a href="https://www.luogu.com.cn/blog/user51313/solution-p3366">博客</a></p>
+</li>
+<li>
+<p>中午把照片发来</p>
+</li>
+<li>
+<p>先将panh图论入门的内容搞懂</p>
+</li>
+<li>
+<p>学连通性相关的内容</p>
+</li>
+</ul>
+<h2 id="310">3.10</h2>
+<ul>
+<li>
+<p>模拟赛（第13名）</p>
+</li>
+<li>
+<p>修改了博客</p>
+</li>
+</ul>
+<h2 id="39">3.9</h2>
+<ul>
+<li>
+<p>一定要写完博客（over）</p>
+</li>
+<li>
+<p>作业题做两题</p>
+</li>
+<li>
+<p>蓝书 图论</p>
+</li>
+<li>
+<p>洛谷 连通 题单</p>
+</li>
+</ul>
+<h2 id="38">3.8</h2>
+<ul>
+<li>写 <strong>欧拉图</strong> 的博客（在代码实现的方面存在问题，问懂）</li>
+</ul>
+<h2 id="37">3.7</h2>
+<ul>
+<li>
+<p>学了悬线法，写了博客。</p>
+</li>
+<li>
+<p>开始系统地学图论</p>
+</li>
+</ul>
+<h2 id="36">3.6</h2>
+<ul>
+<li>
+<p>模拟赛（30分）。</p>
+</li>
+<li>
+<p>晚上打 ABC，还是只能做三题，不过第五题再想想应该能做。</p>
+</li>
+</ul>
+<h2 id="202135">2021.3.5</h2>
+<ul>
+<li>
+<p>被 可可萝 评论了</p>
+</li>
+<li>
+<p>线段树板子打熟（还需在打熟）</p>
+</li>
+<li>
+<p>状压 DP 博客（已完成）</p>
+</li>
+</ul>
+<h2 id="202134">2021.3.4</h2>
+<ul>
+<li>
+<p>dp基础题五道</p>
+</li>
+<li>
+<p>学蓝书</p>
+</li>
+<li>
+<p>线段树、树状数组重新学（蓝书不太详细）（做了几题，对<strong>区间修改</strong>有些感觉了）</p>
+</li>
+<li>
+<p>数据结构一题（写了两道）</p>
+</li>
+<li>
+<p>状压 DP 博客写好（没写好，写了篇题解有点长）</p>
+</li>
+</ul>
+<h2 id="202133">2021.3.3</h2>
+<ul>
+<li>模拟赛（第十），<strong>dp</strong>欠缺，要补</li>
+</ul>
+<h2 id="202132">2021.3.2</h2>
+<ul>
+<li>
+<p>数据结构（有收获）</p>
+</li>
+<li>
+<p>状压 dp（已完成）</p>
+</li>
+<li>
+<p>线段树（未学习）</p>
+</li>
+</ul>
+<h2 id="2021229">2021.2.29</h2>
+<ul>
+<li>
+<p>应该有模拟赛，好好打。（并没有）</p>
+</li>
+<li>
+<p>洛谷做完状压 DP 题单。（没做完）</p>
+</li>
+<li>
+<p>蓝书线段树（没学，上了数据结构）</p>
+</li>
+<li>
+<p>写了篇题解，最主要收获还是领会了一些单调队列优化 DP 的方法</p>
+</li>
+</ul>
+<h2 id="2021228">2021.2.28</h2>
+<ul>
+<li>
+<p>开始学蓝书</p>
+</li>
+<li>
+<p>写了一篇题解 <a href="https://www.luogu.com.cn/blog/YIFANlg/solution-uva1252">UVA1252 20个问题 Twenty Questions</a>，状压 DP</p>
+</li>
+<li>
+<p>看了位运算加上上面的题解，对状压 DP 有更好的理解</p>
+</li>
+</ul>
+<h2 id="2021227">2021.2.27</h2>
+<ul>
+<li>
+<p>区间DP为啥枚举len（已记录）</p>
+</li>
+<li>
+<p>不过明天应该有比赛（没有模拟赛，ATcoder）</p>
+</li>
+<li>
+<p>写了一篇题解</p>
+</li>
+<li>
+<p>学习了欧拉函数、定理（掌握程度增加）</p>
+</li>
+<li>
+<p>比赛（思维含量上升）</p>
+</li>
+</ul>
+<h2 id="2021225">2021.2.25</h2>
+<ul>
+<li>写了一篇题解</li>
+</ul>
+<p><a href="https://www.luogu.com.cn/blog/YIFANlg/solution-uva1471">UVA1471 防线 Defense Lines</a></p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://zhuyifan314.github.io/tag/EoQV368Tt/" class="tag">
+                    总结
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zhuyifan314.github.io/post/hello-gridea/">
+                  <h3 class="post-title">
+                    Hello Gridea
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
