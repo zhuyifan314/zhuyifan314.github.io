@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zhuyifan314.github.io</id>
     <title>Gridea</title>
-    <updated>2021-04-18T00:25:01.677Z</updated>
+    <updated>2021-04-18T00:26:17.499Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zhuyifan314.github.io"/>
     <link rel="self" href="https://zhuyifan314.github.io/atom.xml"/>
@@ -1184,7 +1184,11 @@ int main()
         <link href="https://zhuyifan314.github.io/post/zu-he-ji-shu-ru-men/">
         </link>
         <updated>2021-04-17T23:27:23.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="组合计数入门">组合计数入门</h1>
+        <summary type="html"><![CDATA[<p>一些简单的组合计数知识。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>一些简单的组合计数知识。</p>
+<!-- more -->
+<h1 id="组合计数入门">组合计数入门</h1>
 <h2 id="一-组合数">一、组合数</h2>
 <h3 id="1性质">1.性质</h3>
 <h4 id="1二项式定理">（1）二项式定理</h4>
@@ -1964,7 +1968,11 @@ for(int i=1;i&lt;=n;i++)
         <link href="https://zhuyifan314.github.io/post/ti-xing-zong-jie/">
         </link>
         <updated>2021-04-17T23:23:22.000Z</updated>
-        <content type="html"><![CDATA[<p><strong>题型</strong>：修改、查询 <strong>边权</strong>。</p>
+        <summary type="html"><![CDATA[<p>总结在做题时遇到的一些题型。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>总结在做题时遇到的一些题型。</p>
+<!-- more -->
+<p><strong>题型</strong>：修改、查询 <strong>边权</strong>。</p>
 <p><strong>知识点</strong>：树链剖分。</p>
 <p><strong>解决方法</strong>：<br>
 将边权看作一条边的 <strong>子节点</strong>（<strong>深度较深</strong>）的点的权值。</p>
