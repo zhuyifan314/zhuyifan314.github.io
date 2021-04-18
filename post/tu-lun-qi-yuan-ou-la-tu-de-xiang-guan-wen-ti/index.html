@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://zhuyifan314.github.io/favicon.ico?v=1618703754589">
+<link rel="shortcut icon" href="https://zhuyifan314.github.io/favicon.ico?v=1618704045790">
 <link rel="stylesheet" href="https://zhuyifan314.github.io/styles/main.css">
 
 
@@ -18,8 +18,10 @@
 
 
 
-    <meta name="description" content="一、引入
-有这么一座城，城里有 777 座桥。问是否有一条路径，可以 不重复的地走遍 777 座桥。这就是著名的 七桥问题，在相当长的时间内都无人解答。直到 173617361736 年，数学家欧拉经过研究发表了论文《哥尼斯堡的七座桥》，给..." />
+    <meta name="description" content="图论起源——欧拉图在信息学竞赛中时常出现，本文将简单地介绍一下。
+
+一、引入
+有这么一座城，城里有 777 座桥。问是否有一条路径，可以 不重复的地走遍 777 座桥。这就是著名的 七桥问题，在相当长的时间内都无人解答。直到 1736173..." />
     <meta name="keywords" content="图论,学习笔记" />
   </head>
   <body>
@@ -29,7 +31,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://zhuyifan314.github.io">
-        <img src="https://zhuyifan314.github.io/images/avatar.png?v=1618703754589" class="site-logo">
+        <img src="https://zhuyifan314.github.io/images/avatar.png?v=1618704045790" class="site-logo">
         <h1 class="site-title">Gridea</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -95,7 +97,9 @@
             <div class="post-date">2021-04-18</div>
             
             <div class="post-content" v-pre>
-              <h2 id="一-引入">一、引入</h2>
+              <p>图论起源——欧拉图在信息学竞赛中时常出现，本文将简单地介绍一下。</p>
+<!-- more -->
+<h2 id="一-引入">一、引入</h2>
 <p>有这么一座城，城里有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>7</mn></mrow><annotation encoding="application/x-tex">7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">7</span></span></span></span> 座桥。问是否有一条路径，可以 <strong>不重复的地走遍 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>7</mn></mrow><annotation encoding="application/x-tex">7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">7</span></span></span></span> 座桥</strong>。这就是著名的 <strong>七桥问题</strong>，在相当长的时间内都无人解答。直到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1736</mn></mrow><annotation encoding="application/x-tex">1736</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">7</span><span class="mord">3</span><span class="mord">6</span></span></span></span> 年，数学家欧拉经过研究发表了论文《哥尼斯堡的七座桥》，给出了解答。如下图：</p>
 <figure data-type="image" tabindex="1"><img src="https://cdn.luogu.com.cn/upload/image_hosting/9hdv5ga2.png" alt="" loading="lazy"></figure>
 <p>他将七桥问题改成第二幅图，那么问题转化为：<strong>能否从无向图的一个顶点出发走出一条道路，每条边恰好经过一次</strong>。满足上述条件的路径叫 <strong>欧拉路径（eulerian path）</strong>，也可以形象的称为“一笔画”。而含有欧拉路径的图叫 <strong>欧拉图</strong>。从那时起，图论作为数学的一个新的分支而诞生。因此，欧拉图可以说是 <strong>图论的起源</strong>，也是图论研究的重要的一部分。</p>
