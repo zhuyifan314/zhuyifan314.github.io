@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zhuyifan314.github.io</id>
     <title>Creater&apos;s World</title>
-    <updated>2021-04-19T11:16:07.219Z</updated>
+    <updated>2021-04-19T11:17:31.175Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zhuyifan314.github.io"/>
     <link rel="self" href="https://zhuyifan314.github.io/atom.xml"/>
@@ -87,6 +87,7 @@
 </li>
 </ul>
 <h3 id="五-代码">五、代码</h3>
+<p><a href="https://www.luogu.com.cn/problem/P3389">P3389 【模板】高斯消元法</a></p>
 <pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
 using namespace std;
 typedef long long ll;
