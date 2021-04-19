@@ -1,21 +1,13 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
-
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>组合计数入门 | Creater&#39;s World</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://zhuyifan314.github.io/favicon.ico?v=1618801222919">
+<link rel="shortcut icon" href="https://zhuyifan314.github.io/favicon.ico?v=1618801299669">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://zhuyifan314.github.io/styles/main.css">
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<link rel="alternate" type="application/atom+xml" title="组合计数入门 | Creater&#39;s World - Atom Feed" href="https://zhuyifan314.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
@@ -29,84 +21,92 @@
 (a+b)n=∑i=0n(ni)aibn−i(a+b)^n=\sum_{i=0}^n \binom{n}{i}a^ib^{n-i}
 (a+b)n..." />
     <meta name="keywords" content="组合计数,学习笔记" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
   <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://zhuyifan314.github.io">
-        <img src="https://zhuyifan314.github.io/images/avatar.png?v=1618801222919" class="site-logo">
-        <h1 class="site-title">Creater&#39;s World</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://zhuyifan314.github.io">
+  <img class="avatar" src="https://zhuyifan314.github.io/images/avatar.png?v=1618801299669" alt="">
+  </a>
+  <h1 class="site-title">
+    Creater&#39;s World
+  </h1>
+  <p class="site-description">
+    Hello World!
+  </p>
+  <div class="menu-container">
+    
       
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
+        <a href="/" class="menu">
+          首页
+        </a>
       
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
+    
       
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
+        <a href="/archives" class="menu">
+          归档
+        </a>
       
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
+    
       
-    </div>
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
+  <div class="social-container">
+    
       
-        
+    
       
-        
+    
       
-        
+    
       
-        
+    
       
-        
-      
-    </div>
-    <div class="site-description">
-      Hello World!
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zhuyifan314.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
+    
   </div>
 </div>
 
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">组合计数入门</h2>
-            <div class="post-date">2021-04-18</div>
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              组合计数入门
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-04-18
+              </span>
+              <span>
+                16 min read
+              </span>
+              
+                <a href="https://zhuyifan314.github.io/tag/DjnoL8sNs/" class="post-tag">
+                  # 组合计数
+                </a>
+              
+                <a href="https://zhuyifan314.github.io/tag/ted_gNn_k/" class="post-tag">
+                  # 学习笔记
+                </a>
+              
+            </div>
             
-              <div class="feature-container" style="background-image: url('https://img.imgdb.cn/item/607b7b268322e6675c12a9d0.jpg')">
-              </div>
+              <img class="post-feature-image" src="https://img.imgdb.cn/item/607b7b268322e6675c12a9d0.jpg" alt="">
             
-            <div class="post-content" v-pre>
-              <p>一些简单的组合计数知识。</p>
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>一些简单的组合计数知识。</p>
 <!-- more -->
 <h1 id="组合计数入门">组合计数入门</h1>
 <h2 id="一-组合数">一、组合数</h2>
@@ -371,62 +371,139 @@ int main()
 <p>思路:</p>
 <p>还是考虑 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span></span></span></span> 最大，然后 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi><mo>+</mo><mi>c</mi><mo>=</mo><mi>n</mi><mo>−</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">b+c=n-a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">c</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span></span></span></span>，显然有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>n</mi><mo>−</mo><mi>a</mi><mo>)</mo><mi mathvariant="normal">/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">(n-a)/2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">a</span><span class="mclose">)</span><span class="mord">/</span><span class="mord">2</span></span></span></span> 种，注意奇偶性。</p>
 
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E7%BB%84%E5%90%88%E8%AE%A1%E6%95%B0%E5%85%A5%E9%97%A8">组合计数入门</a>
+<ul>
+<li><a href="#%E4%B8%80-%E7%BB%84%E5%90%88%E6%95%B0">一、组合数</a>
+<ul>
+<li><a href="#1%E6%80%A7%E8%B4%A8">1.性质</a>
+<ul>
+<li><a href="#1%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%AE%9A%E7%90%86">（1）二项式定理</a></li>
+<li><a href="#2%E7%BB%84%E5%90%88%E6%81%92%E7%AD%89%E5%BC%8F">（2）组合恒等式</a></li>
+</ul>
+</li>
+<li><a href="#2%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95">2.计算方法</a>
+<ul>
+<li><a href="#1exlucas">（1）<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi><mi>x</mi><mi>L</mi><mi>u</mi><mi>c</mi><mi>a</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">ExLucas</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mord mathdefault">x</span><span class="mord mathdefault">L</span><span class="mord mathdefault">u</span><span class="mord mathdefault">c</span><span class="mord mathdefault">a</span><span class="mord mathdefault">s</span></span></span></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E4%BA%8C-%E5%8D%A1%E7%89%B9%E5%85%B0%E6%95%B0">二、卡特兰数</a>
+<ul>
+<li><a href="#1%E5%AE%9A%E4%B9%89">1.定义</a></li>
+<li><a href="#2%E6%80%A7%E8%B4%A8">2.性质</a></li>
+<li><a href="#3%E8%A7%84%E5%BE%8B">3.规律</a></li>
+<li><a href="#4%E4%BE%8B%E9%A2%98">4.例题</a></li>
+</ul>
+</li>
+<li><a href="#%E4%B8%89-%E5%BA%B7%E6%89%98%E5%B1%95%E5%BC%80">三、康托展开</a>
+<ul>
+<li><a href="#1%E5%AE%9A%E4%B9%89-2">1.定义</a>
+<ul>
+<li><a href="#ps">PS:</a></li>
+</ul>
+</li>
+<li><a href="#2%E9%80%86%E5%BA%B7%E6%89%98%E5%B1%95%E5%BC%80">2.逆康托展开</a></li>
+<li><a href="#3%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0202131-%E6%9B%B4%E6%96%B0">3.代码实现（<em>2021.3.1</em> 更新）</a>
+<ul>
+<li><a href="#1%E5%BA%B7%E6%89%98%E5%B1%95%E5%BC%80%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84">（1）康托展开（树状数组）</a></li>
+<li><a href="#2%E9%80%86%E5%BA%B7%E6%89%98%E5%B1%95%E5%BC%80%E7%BA%BF%E6%AE%B5%E6%A0%91">（2）逆康托展开（线段树）</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E5%9B%9B-%E5%AE%B9%E6%96%A5">四、容斥</a>
+<ul>
+<li><a href="#1%E5%AE%9A%E4%B9%89-3">1.定义</a></li>
+<li><a href="#2%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%8F%8D%E6%BC%94">2.二项式反演</a></li>
+<li><a href="#3min-max%E5%AE%B9%E6%96%A5">3.min-max容斥</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BA%94-%E5%A5%87%E6%80%AA%E7%9A%84%E6%8E%92%E5%88%97">五、奇怪的排列</a>
+<ul>
+<li><a href="#1%E4%B8%8D%E7%9B%B8%E9%82%BB%E7%9A%84%E6%8E%92%E5%88%97">1.不相邻的排列</a></li>
+<li><a href="#2%E9%94%99%E4%BD%8D%E6%8E%92%E5%88%97">2.错位排列</a></li>
+</ul>
+</li>
+<li><a href="#%E5%85%AD-%E8%AE%A1%E6%95%B0%E5%8E%9F%E7%90%86">六、计数原理</a>
+<ul>
+<li><a href="#1%E5%8A%A0%E6%B3%95%E5%8E%9F%E7%90%86">1.加法原理</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
             </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://zhuyifan314.github.io/tag/DjnoL8sNs/" class="tag">
-                    组合计数
-                  </a>
-                
-                  <a href="https://zhuyifan314.github.io/tag/ted_gNn_k/" class="tag">
-                    学习笔记
-                  </a>
-                
-              </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://zhuyifan314.github.io/post/oier-de-shi-neng-suan-tou-ma/">
-                  <h3 class="post-title">
-                    oier的事，能算偷吗？
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-
-          </div>
-
+          </article>
         </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://zhuyifan314.github.io/post/oier-de-shi-neng-suan-tou-ma/">
+              <h3 class="post-title">
+                oier的事，能算偷吗？
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://zhuyifan314.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
       </div>
     </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
+    <script>
+      hljs.initHighlightingOnLoad()
 
-AOS.init();
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
 
-</script>
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
 
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
 
-  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad()
-  </script>
-
-
-
-
-
+    </script>
   </body>
 </html>
