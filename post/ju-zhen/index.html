@@ -2,20 +2,23 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>矩阵 | Creater&#39;s World</title>
-<link rel="shortcut icon" href="https://zhuyifan314.github.io/favicon.ico?v=1618831017724">
+<title>线性代数 | Creater&#39;s World</title>
+<link rel="shortcut icon" href="https://zhuyifan314.github.io/favicon.ico?v=1620212547518">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://zhuyifan314.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="矩阵 | Creater&#39;s World - Atom Feed" href="https://zhuyifan314.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="线性代数 | Creater&#39;s World - Atom Feed" href="https://zhuyifan314.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="矩阵加速
+    <meta name="description" content="线性代数在 OI 中也有非常多的应用，简单地介绍一下。
+
+3b1b 线性代数的本质
+矩阵加速
 一、例题
 P3216 [HNOI2011]数学作业
-显然这样的数有递推式 fi=fi×10k+i(k 为 i 的位数)f_i= f_i \times10^k + i (k \ \text{为} \ i \ \text{的位数})f..." />
-    <meta name="keywords" content="" />
+显然这样的数有递推式 fi=fi×10k+i(k 为 i 的位数)f_i= f_i \time..." />
+    <meta name="keywords" content="线性代数,学习笔记" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -24,7 +27,7 @@ P3216 [HNOI2011]数学作业
       <div class="main-content">
         <div class="site-header">
   <a href="https://zhuyifan314.github.io">
-  <img class="avatar" src="https://zhuyifan314.github.io/images/avatar.png?v=1618831017724" alt="">
+  <img class="avatar" src="https://zhuyifan314.github.io/images/avatar.png?v=1620212547518" alt="">
   </a>
   <h1 class="site-title">
     Creater&#39;s World
@@ -77,15 +80,23 @@ P3216 [HNOI2011]数学作业
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              矩阵
+              线性代数
             </h2>
             <div class="post-info">
               <span>
                 2021-04-19
               </span>
               <span>
-                9 min read
+                10 min read
               </span>
+              
+                <a href="https://zhuyifan314.github.io/tag/Q9pDk5WHb/" class="post-tag">
+                  # 线性代数
+                </a>
+              
+                <a href="https://zhuyifan314.github.io/tag/ted_gNn_k/" class="post-tag">
+                  # 学习笔记
+                </a>
               
             </div>
             
@@ -93,7 +104,10 @@ P3216 [HNOI2011]数学作业
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h2 id="矩阵加速">矩阵加速</h2>
+                <p>线性代数在 OI 中也有非常多的应用，简单地介绍一下。</p>
+<!-- more -->
+<p><a href="https://www.bilibili.com/video/BV1ys411472E?">3b1b 线性代数的本质</a></p>
+<h2 id="矩阵加速">矩阵加速</h2>
 <h3 id="一-例题">一、例题</h3>
 <p><strong><a href="https://www.luogu.com.cn/problem/P3216">P3216 [HNOI2011]数学作业</a></strong></p>
 <p>显然这样的数有递推式 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>f</mi><mi>i</mi></msub><mo>=</mo><msub><mi>f</mi><mi>i</mi></msub><mo>×</mo><mn>1</mn><msup><mn>0</mn><mi>k</mi></msup><mo>+</mo><mi>i</mi><mo>(</mo><mi>k</mi><mtext> 为 </mtext><mi>i</mi><mtext> 的位数</mtext><mo>)</mo></mrow><annotation encoding="application/x-tex">f_i= f_i \times10^k + i (k \ \text{为} \ i \ \text{的位数})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.932438em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.849108em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">i</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mspace"> </span><span class="mord text"><span class="mord cjk_fallback">为</span></span><span class="mspace"> </span><span class="mord mathdefault">i</span><span class="mspace"> </span><span class="mord text"><span class="mord cjk_fallback">的位数</span></span><span class="mclose">)</span></span></span></span>，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mo>≤</mo><mn>1</mn><msup><mn>0</mn><mn>18</mn></msup></mrow><annotation encoding="application/x-tex">i\leq 10^{18}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.79549em;vertical-align:-0.13597em;"></span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">8</span></span></span></span></span></span></span></span></span></span></span></span>，显然要用矩阵加速优化递推，注意要分段。</p>
@@ -110,6 +124,7 @@ P3216 [HNOI2011]数学作业
 </ul>
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>det</mi><mo>⁡</mo><mo>(</mo><mi>A</mi><mo>)</mo><mo>=</mo><msub><mi>a</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><msub><mi>A</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>a</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><msub><mi>A</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>a</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>j</mi></mrow></msub><mo>(</mo><mo>−</mo><mn>1</mn><msup><mo>)</mo><mrow><mi>i</mi><mo>+</mo><mi>j</mi></mrow></msup><mi>det</mi><mo>⁡</mo><mo>(</mo><msub><mi>A</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>j</mi></mrow></msub><mo>)</mo></mrow><annotation encoding="application/x-tex">\det(A)=a_{i1}A_{i1}+\cdots+a_{in}A_{in}=\sum_{j=1}^na_{i,j}(-1)^{i+j}\det(A_{i,j})
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">det</span><span class="mopen">(</span><span class="mord mathdefault">A</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="minner">⋯</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.0651740000000007em;vertical-align:-1.4137769999999998em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000007em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.4137769999999998em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord">−</span><span class="mord">1</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mbin mtight">+</span><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">det</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></p>
+<h3 id="二-性质">二、性质</h3>
 <ul>
 <li>
 <p>矩阵某两行（列）交换，行列式 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>×</mo><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">\times (-1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">×</span><span class="mopen">(</span><span class="mord">−</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>。</p>
@@ -121,6 +136,67 @@ P3216 [HNOI2011]数学作业
 <p>矩阵某一行（列） <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>×</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">\times k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord">×</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span>，行列式 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>×</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">\times k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord">×</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span>。</p>
 </li>
 </ul>
+<h3 id="三-代码">三、代码</h3>
+<p><a href="https://www.luogu.com.cn/problem/P7112">P7112 【模板】行列式求值</a></p>
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+typedef long long ll;
+
+inline ll read() {
+    ll sum = 0, ff = 1;
+    char ch = getchar();
+    while(ch &lt; '0' || ch &gt; '9') {
+        if(ch == '-') {
+            ff = -1;
+        }
+        ch = getchar();
+    }
+    while(ch &gt;= '0' &amp;&amp; ch &lt;= '9') {
+    	sum = sum * 10 + ch - 48;
+        ch = getchar();
+    }
+    return sum * ff;
+}
+
+void write(ll x) {
+	if(x &lt; 0)
+	    putchar('-'), x = -x;
+	if(x &gt; 9)
+		write(x / 10);
+	putchar(x % 10 + '0');
+}
+
+const int N = 607;
+int n, mod, a[N][N], tmp, ans = 1, opt = 1;
+
+void sol() {
+	for(int i = 1; i &lt;= n; i++)
+		for(int j = i + 1; j &lt;= n; j++) {
+			while(a[i][i]) {//辗转相减法 
+				tmp = a[j][i] / a[i][i];
+				for(int k = i; k &lt;= n; k++)
+					a[j][k] = (a[j][k] - (ll)a[i][k] * tmp % mod + mod) % mod;
+				swap(a[i], a[j]), opt = -opt;
+			}
+			swap(a[i], a[j]), opt = -opt;
+		}	
+	for(int i = 1; i &lt;= n; i++)
+		ans = (ll)ans * a[i][i] % mod;
+	ans *= opt;
+}
+
+int main() {
+//  	freopen(&quot;.in&quot;, &quot;r&quot;, stdin);
+//  	freopen(&quot;.out&quot;, &quot;w&quot;, stdout);
+	n = read(), mod = read();
+	for(int i = 1; i &lt;= n; i++)
+		for(int j = 1; j &lt;= n; j++)
+			a[i][j] = read();//, a[i][j] %= mod;
+	sol();
+	write((ans + mod) % mod);
+    return 0;
+}
+</code></pre>
 <h2 id="高斯消元">高斯消元</h2>
 <h3 id="一-简介">一、简介</h3>
 <p>高斯消元是求解线性方程组、行列式计算等的经典算法，在很多方面都有涉及，因此有必要学一下。</p>
@@ -247,7 +323,10 @@ int main() {
     return 0;
 }
 </code></pre>
-<h3 id="六-参考文献">六、参考文献</h3>
+<h3 id="六-例题">六、例题</h3>
+<p><a href="https://www.luogu.com.cn/problem/P2455">P2455 [SDOI2006]线性方程组</a></p>
+<p>用到 <strong>高斯-约旦消元法</strong>，难点在于判断无解和无数解。</p>
+<h3 id="七-参考文献">七、参考文献</h3>
 <p><a href="https://blog.csdn.net/C20190102/article/details/103041769">C++高斯消元详解</a></p>
 <p>算法竞赛入门经典 训练指导</p>
 
@@ -264,6 +343,8 @@ int main() {
 <li><a href="#%E7%9F%A9%E9%98%B5%E8%A1%8C%E5%88%97%E5%BC%8F">矩阵行列式</a>
 <ul>
 <li><a href="#%E4%B8%80-%E8%A1%A8%E7%A4%BA">一、表示</a></li>
+<li><a href="#%E4%BA%8C-%E6%80%A7%E8%B4%A8">二、性质</a></li>
+<li><a href="#%E4%B8%89-%E4%BB%A3%E7%A0%81">三、代码</a></li>
 </ul>
 </li>
 <li><a href="#%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83">高斯消元</a>
@@ -273,7 +354,8 @@ int main() {
 <li><a href="#%E4%B8%89-%E6%93%8D%E4%BD%9C">三、操作</a></li>
 <li><a href="#%E5%9B%9B-%E6%B3%A8%E6%84%8F%E7%82%B9">四、注意点</a></li>
 <li><a href="#%E4%BA%94-%E4%BB%A3%E7%A0%81">五、代码</a></li>
-<li><a href="#%E5%85%AD-%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE">六、参考文献</a></li>
+<li><a href="#%E5%85%AD-%E4%BE%8B%E9%A2%98">六、例题</a></li>
+<li><a href="#%E4%B8%83-%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE">七、参考文献</a></li>
 </ul>
 </li>
 </ul>
@@ -288,9 +370,9 @@ int main() {
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://zhuyifan314.github.io/post/zu-he-ji-shu-ru-fen/">
+            <a href="https://zhuyifan314.github.io/post/tu-lun-qi-yuan-ou-la-tu-de-xiang-guan-wen-ti/">
               <h3 class="post-title">
-                组合计数入坟
+                图论起源——欧拉图的相关问题
               </h3>
             </a>
           </div>
