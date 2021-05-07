@@ -1,0 +1,293 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>搜索入坟 | Creater&#39;s World</title>
+<link rel="shortcut icon" href="https://zhuyifan314.github.io/favicon.ico?v=1620372864825">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://zhuyifan314.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="搜索入坟 | Creater&#39;s World - Atom Feed" href="https://zhuyifan314.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="一、剪枝
+1. 简介
+剪枝是在普通的 DFS 上对于不需要计算的值（要么已经计算了，要么不用计算）就不去搜索。
+2. 种类
+
+
+记忆化搜索
+
+
+最优性剪枝
+
+
+可行性剪枝
+
+
+3. 方法
+
+
+极端法
+考虑极端情况，若最极端（理想）的情况都无..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://zhuyifan314.github.io">
+  <img class="avatar" src="https://zhuyifan314.github.io/images/avatar.png?v=1620372864825" alt="">
+  </a>
+  <h1 class="site-title">
+    Creater&#39;s World
+  </h1>
+  <p class="site-description">
+    Hello World!
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              搜索入坟
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-04-26
+              </span>
+              <span>
+                4 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h2 id="一-剪枝">一、剪枝</h2>
+<h3 id="1-简介">1. 简介</h3>
+<p>剪枝是在普通的 DFS 上对于不需要计算的值（要么已经计算了，要么不用计算）就不去搜索。</p>
+<h3 id="2-种类">2. 种类</h3>
+<ul>
+<li>
+<p>记忆化搜索</p>
+</li>
+<li>
+<p>最优性剪枝</p>
+</li>
+<li>
+<p>可行性剪枝</p>
+</li>
+</ul>
+<h3 id="3-方法">3. 方法</h3>
+<ul>
+<li>
+<p>极端法</p>
+<p>考虑极端情况，若最极端（理想）的情况都无法满足，那么肯定无法满足。</p>
+</li>
+<li>
+<p>数学法</p>
+<p>建立不等式，确定上下界。</p>
+</li>
+</ul>
+<h3 id="4-例题">4. 例题</h3>
+<p><a href="https://www.luogu.com.cn/problem/P1731">P1731 [NOI1999] 生日蛋糕</a></p>
+<p>运用了最优性剪枝：用极端法，若剩下的蛋糕都放最小的，还是超过了，那么直接 <code>return</code>、可行性剪枝：还是极端法，若剩下的蛋糕都放最大的，还是没到，直接 <code>return</code>。</p>
+<p>[P1074 [NOIP2009 提高组] 靶形数独](https://www.luogu.com.cn/problem/P1074</p>
+<p>)</p>
+<h2 id="二-折半搜索meet-in-the-middle">二、折半搜索（meet-in-the-middle）</h2>
+<h3 id="1-简介-2">1. 简介</h3>
+<p>折半搜索通过将整个搜索的过程分为两个部分，然后两个部分依次搜索，最后将两次搜索得到的答案序列合并，得到最终答案。</p>
+<p>搜索的时间复杂度往往是指数级的，而折半搜索可以将指数除以 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span>，大大优化时间复杂度。例如一道题爆搜时间复杂度为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mn>2</mn><mi>n</mi></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(2^n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>，那么折半搜索时间复杂度就为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mn>2</mn><mrow><mi>n</mi><mi mathvariant="normal">/</mi><mn>2</mn></mrow></msup><mo>+</mo><mtext>合并操作的时间复杂度</mtext><mo>)</mo></mrow><annotation encoding="application/x-tex">O(2^{n/2} + \text{合并操作的时间复杂度})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.138em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8879999999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mord mtight">/</span><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord cjk_fallback">合并操作的时间复杂度</span></span><span class="mclose">)</span></span></span></span>。</p>
+<h3 id="2-条件">2. 条件</h3>
+<p>并不是什么搜索都可以折半的，需要满足以下条件。</p>
+<ul>
+<li>
+<p>一般需要知道总共走几步。</p>
+</li>
+<li>
+<p>结束状态是什么。</p>
+</li>
+<li>
+<p>前后决策互不影响。</p>
+</li>
+</ul>
+<h3 id="3-例题">3. 例题</h3>
+<p><a href="https://www.luogu.com.cn/problem/P4799">P4799 [CEOI2015 Day2]世界冰球锦标赛</a></p>
+<p>首先想到背包，一看数据范围 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mo>≤</mo><mn>1</mn><msup><mn>0</mn><mn>18</mn></msup></mrow><annotation encoding="application/x-tex">M\leq 10^{18}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8193em;vertical-align:-0.13597em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">8</span></span></span></span></span></span></span></span></span></span></span></span>，显然过不了。而最简单的搜索时间复杂度为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mn>40</mn></msup></mrow><annotation encoding="application/x-tex">2^{40}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">4</span><span class="mord mtight">0</span></span></span></span></span></span></span></span></span></span></span></span>，也无法通过。</p>
+<p>那么我们考虑是否可以折半搜索。我们知道要走几步（即 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span>）、知道结束状态是什么（总和不超过 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span></span></span></span>）、前后决策互不影响（前面选了哪几张和后面没有关系），那么我们可以折半搜索。</p>
+<p>具体操作时，我们将整个序列分为两个序列，再依次搜索。对于第一次搜索的序列，我们记下搜索的值，存进 <code>vector</code> 中，对 <code>vector</code> 排序，然后在第二次搜索时二分查找一下统计答案。</p>
+<p><a href="https://www.luogu.com.cn/problem/P2962">P2962 [USACO09NOV]Lights G</a></p>
+<h2 id="三-a">三、A*</h2>
+<h3 id="1-简介-3">1. 简介</h3>
+<p>A* 搜索算法是对 BFS 的改进。定义起点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">s</span></span></span></span>，终点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathdefault">t</span></span></span></span>，从起点（初始状态）开始的距离函数 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">g(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span></span></span></span>，到终点（最终状态）的距离函数 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>h</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">h(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">h</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span></span></span></span>，以及每个点的估价函数 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mi>h</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">f(x)=g(x)+h(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">h</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span></span></span></span>。</p>
+<p>A* 算法每次从优先队列中取出一个 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span></span></span></span> 最小的元素，然后更新相邻的状态。</p>
+<h3 id="2-例题">2. 例题</h3>
+<p><a href="https://www.luogu.com.cn/problem/P1379">P1379 八数码难题</a></p>
+<p>这道题有终点、有起点，估价函数 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">h</span></span></span></span> 可以定义为不应该在这个位置的数字个数。</p>
+<h2 id="四-迭代加深">四、迭代加深</h2>
+<h3 id="1-简介-4">1. 简介</h3>
+<p>迭代加深就是在普通的 DFS 之上限制了搜索的层数，以此来达到优化时间复杂度的效果。</p>
+<h3 id="2-例题-2">2. 例题</h3>
+<p><a href="https://www.luogu.com.cn/problem/UVA529">UVA529 Addition Chains</a></p>
+<p>就是普通的搜索之上加了个层数限制，因为本题要求长度最短，找到答案直接输出即可。</p>
+<h2 id="五-ida">五、IDA*</h2>
+<h3 id="例题">例题</h3>
+<p><a href="https://www.luogu.com.cn/problem/P2324">P2324 [SCOI2005]骑士精神</a></p>
+<p>因为本题只有黑白两种颜色的棋子，最好的情况就是把黑白棋子对换，因此估价函数就是不在自己位置的棋子的个数（但像八数码这样的就不能直接这样做）。</p>
+<p>[UVA12558 埃及分数 Egyptian Fractions (HARD version)(https://www.luogu.com.cn/problem/UVA12558)</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E4%B8%80-%E5%89%AA%E6%9E%9D">一、剪枝</a>
+<ul>
+<li><a href="#1-%E7%AE%80%E4%BB%8B">1. 简介</a></li>
+<li><a href="#2-%E7%A7%8D%E7%B1%BB">2. 种类</a></li>
+<li><a href="#3-%E6%96%B9%E6%B3%95">3. 方法</a></li>
+<li><a href="#4-%E4%BE%8B%E9%A2%98">4. 例题</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BA%8C-%E6%8A%98%E5%8D%8A%E6%90%9C%E7%B4%A2meet-in-the-middle">二、折半搜索（meet-in-the-middle）</a>
+<ul>
+<li><a href="#1-%E7%AE%80%E4%BB%8B-2">1. 简介</a></li>
+<li><a href="#2-%E6%9D%A1%E4%BB%B6">2. 条件</a></li>
+<li><a href="#3-%E4%BE%8B%E9%A2%98">3. 例题</a></li>
+</ul>
+</li>
+<li><a href="#%E4%B8%89-a">三、A*</a>
+<ul>
+<li><a href="#1-%E7%AE%80%E4%BB%8B-3">1. 简介</a></li>
+<li><a href="#2-%E4%BE%8B%E9%A2%98">2. 例题</a></li>
+</ul>
+</li>
+<li><a href="#%E5%9B%9B-%E8%BF%AD%E4%BB%A3%E5%8A%A0%E6%B7%B1">四、迭代加深</a>
+<ul>
+<li><a href="#1-%E7%AE%80%E4%BB%8B-4">1. 简介</a></li>
+<li><a href="#2-%E4%BE%8B%E9%A2%98-2">2. 例题</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BA%94-ida">五、IDA*</a>
+<ul>
+<li><a href="#%E4%BE%8B%E9%A2%98">例题</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://zhuyifan314.github.io/post/you-yong-de-zhi-shi-zeng-jia-liao/">
+              <h3 class="post-title">
+                有用的知识增加了
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://zhuyifan314.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
