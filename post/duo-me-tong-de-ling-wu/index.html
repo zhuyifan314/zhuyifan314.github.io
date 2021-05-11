@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>多么痛的领悟！ | Creater&#39;s World</title>
-<link rel="shortcut icon" href="https://zhuyifan314.github.io/favicon.ico?v=1620372864825">
+<link rel="shortcut icon" href="https://zhuyifan314.github.io/favicon.ico?v=1620775410399">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://zhuyifan314.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="多么痛的领悟！ | Creater&#39;s World - Atom Feed" href="https://zhuyifan314.github.io/atom.xml">
@@ -13,12 +13,10 @@
 
     <meta name="description" content="多么痛的领悟！记录一下做题时犯的一些错误。
 
-错误：重载运算符时没有注意顺序，前后弄反了，结果爆蛋了。
-题目：P3216 [HNOI2011]数学作业
-
-
-错误：floyd 中间点没有放在最外面枚举。
-分析：因为在 floyd 中边权会改变..." />
+错误：堆优化 dijstra 重载运算符时应为
+bool operator&lt; (const node &amp;x) const {
+    return dis &gt; x.dis;
+..." />
     <meta name="keywords" content="总结" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -28,7 +26,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://zhuyifan314.github.io">
-  <img class="avatar" src="https://zhuyifan314.github.io/images/avatar.png?v=1620372864825" alt="">
+  <img class="avatar" src="https://zhuyifan314.github.io/images/avatar.png?v=1620775410399" alt="">
   </a>
   <h1 class="site-title">
     Creater&#39;s World
@@ -103,7 +101,20 @@
               <div class="post-content">
                 <p>多么痛的领悟！记录一下做题时犯的一些错误。</p>
 <!-- more -->
-<p><strong>错误</strong>：重载运算符时没有注意顺序，前后弄反了，结果爆蛋了。</p>
+<p><strong>错误</strong>：堆优化 dijstra 重载运算符时应为</p>
+<pre><code class="language-cpp">bool operator&lt; (const node &amp;x) const {
+    return dis &gt; x.dis;
+}
+</code></pre>
+<p>结果写成了</p>
+<pre><code>bool operator&lt; (const node &amp;x) const {
+    return dis &lt; x.dis;
+}
+</code></pre>
+<p>就 TLE 了。</p>
+<p><strong>原理</strong>：其实我也不知道。</p>
+<hr>
+<p><strong>错误</strong>：重载运算符时没有注意变量顺序，前后弄反了，结果爆蛋了。</p>
 <p><strong>题目</strong>：<a href="https://www.luogu.com.cn/problem/P3216">P3216 [HNOI2011]数学作业<br>
 </a></p>
 <hr>
