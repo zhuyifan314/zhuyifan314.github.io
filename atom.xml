@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zhuyifan314.github.io</id>
     <title>Creater&apos;s World</title>
-    <updated>2021-05-11T23:30:27.351Z</updated>
+    <updated>2021-05-11T23:51:47.708Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zhuyifan314.github.io"/>
     <link rel="self" href="https://zhuyifan314.github.io/atom.xml"/>
@@ -16,7 +16,11 @@
         <link href="https://zhuyifan314.github.io/post/sou-suo-ru-fen/">
         </link>
         <updated>2021-04-26T06:21:49.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="一-剪枝">一、剪枝</h2>
+        <summary type="html"><![CDATA[<p>一些更加高级的搜索知识。更新中……</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>一些更加高级的搜索知识。更新中……</p>
+<!-- more -->
+<h2 id="一-剪枝">一、剪枝</h2>
 <h3 id="1-简介">1. 简介</h3>
 <p>剪枝是在普通的 DFS 上对于不需要计算的值（要么已经计算了，要么不用计算）就不去搜索。</p>
 <h3 id="2-种类">2. 种类</h3>
@@ -120,7 +124,11 @@
         <link href="https://zhuyifan314.github.io/post/qi-wang/">
         </link>
         <updated>2021-04-23T13:09:30.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="一-什么是期望">一、什么是期望</h2>
+        <summary type="html"><![CDATA[<p>OI 中常见的期望知识。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>OI 中常见的期望知识。</p>
+<!-- more -->
+<h2 id="一-什么是期望">一、什么是期望</h2>
 <p>在 OI 中我们常指的期望是达到结果的期望，简单来说就是 <strong>每次可能结果的概率乘以其结果的总和</strong>。</p>
 <p>一个离散性随机变量 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span></span></span></span> 的数学期望是每个取值乘以该取值对应概率的总和，记为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi><mo>(</mo><mi>X</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">E(X)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mclose">)</span></span></span></span>。</p>
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi><mo>(</mo><mi>X</mi><mo>)</mo><mo>=</mo><munder><mo>∑</mo><mrow><mi>α</mi><mo>∈</mo><mi>I</mi><mo>(</mo><mi>X</mi><mo>)</mo></mrow></munder><mi>α</mi><mo>⋅</mo><mi>P</mi><mo>(</mo><mi>X</mi><mo>=</mo><mi>α</mi><mo>)</mo><mo>=</mo><munder><mo>∑</mo><mrow><mi>ω</mi><mo>∈</mo><mi>S</mi></mrow></munder><mi>X</mi><mo>(</mo><mi>ω</mi><mo>)</mo><mi>P</mi><mo>(</mo><mi>ω</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">E(X) = \sum_{\alpha\in I(X)} \alpha \cdot P(X=\alpha) = \sum_{\omega\in S}X(\omega)P(\omega)
@@ -244,7 +252,11 @@
         <link href="https://zhuyifan314.github.io/post/shu-xing-dp/">
         </link>
         <updated>2021-04-22T12:37:54.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="一-特点">一、特点</h2>
+        <summary type="html"><![CDATA[<p>树形 dp 可以说是最重要的 dp 之一了。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>树形 dp 可以说是最重要的 dp 之一了。</p>
+<!-- more -->
+<h2 id="一-特点">一、特点</h2>
 <ul>
 <li>
 <p>有明显的树形结构，所求的值可以分解成求每一棵子树的值（也就是形式相同，这也是 dp 的基本特点）</p>
