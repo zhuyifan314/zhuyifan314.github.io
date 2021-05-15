@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zhuyifan314.github.io</id>
     <title>Creater&apos;s World</title>
-    <updated>2021-05-15T07:15:57.277Z</updated>
+    <updated>2021-05-15T07:19:25.401Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zhuyifan314.github.io"/>
     <link rel="self" href="https://zhuyifan314.github.io/atom.xml"/>
@@ -183,8 +183,6 @@ int main() {
         </link>
         <updated>2021-05-13T06:27:02.000Z</updated>
         <content type="html"><![CDATA[<h1 id="分层图">分层图</h1>
-<p>PS：其实分层图是在上图论入门时写的，但在讲进阶也提到过，就加进来了。</p>
-<p>PPS：日报似乎没有分层图，参考肖天的论文再补充一下。</p>
 <h2 id="一-前言">一、前言</h2>
 <p>在 PanH 学长的图论入门里看到了分层图的内容，遂学了一下，写文以记之。</p>
 <p>分层图算是图论中的一种技巧，在普通的图论题中加入一些特殊条件时常常可以用到。</p>
