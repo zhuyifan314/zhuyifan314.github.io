@@ -1,0 +1,302 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>传递闭包 | Creater&#39;s World</title>
+<link rel="shortcut icon" href="https://zhuyifan314.github.io/favicon.ico?v=1621057054762">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://zhuyifan314.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="传递闭包 | Creater&#39;s World - Atom Feed" href="https://zhuyifan314.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="一、简介
+从数学上来说，传递闭包是在集合 SSS 中求包含关系 XXX 的最小传递关系。从图的角度来说，就是如果原图上有 iii 到 jjj 的路径，则其传递闭包的图上就应有从 iii 到 jjj 的边。简单来说，就是确定每个点是否能到达其..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://zhuyifan314.github.io">
+  <img class="avatar" src="https://zhuyifan314.github.io/images/avatar.png?v=1621057054762" alt="">
+  </a>
+  <h1 class="site-title">
+    Creater&#39;s World
+  </h1>
+  <p class="site-description">
+    Hello World!
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              传递闭包
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-05-13
+              </span>
+              <span>
+                4 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h2 id="一-简介">一、简介</h2>
+<p>从数学上来说，传递闭包是在集合 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span></span></span></span> 中求包含关系 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span></span></span></span> 的最小传递关系。从图的角度来说，就是如果原图上有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span></span></span></span> 的路径，则其传递闭包的图上就应有从 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span></span></span></span> 的边。简单来说，就是确定每个点是否能到达其他每个点。</p>
+<h2 id="二-算法">二、算法</h2>
+<p>传递闭包就是用 floyd 来求的。</p>
+<h2 id="三-代码">三、代码</h2>
+<pre><code class="language-cpp">for(int k = 1; k &lt;= n; k++)
+	for(int i = 1; i &lt;= n; i++)
+		for(int j = 1; j &lt;= n; j++)
+			if(e[i][k] &amp;&amp; e[k][j])
+				e[i][j] = true;
+</code></pre>
+<h2 id="四-例题">四、例题</h2>
+<p><a href="http://poj.org/problem?id=1975">POJ1975 Median Weight Bead</a></p>
+<p>我们可以将水滴看作点，若 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>w</mi><mi>i</mi></msub><mo>&gt;</mo><msub><mi>w</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">w_i&gt;w_j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6891em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> 则在 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span></span></span></span> 之间连边，那么接下来就是跑 floyd，然后计算每个点比几个点大，比几个点小，若有一个值大于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mfrac><mi>n</mi><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{n}{2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.040392em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.695392em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span> 则答案加一。</p>
+<pre><code class="language-cpp">#include&lt;cstdio&gt;
+#include&lt;cstring&gt;
+using namespace std;
+typedef long long ll;
+
+inline ll read() {
+	ll sum = 0, ff = 1;
+	char ch = getchar();
+	while(ch &lt; '0' || ch &gt; '9') {
+		if(ch == '-')
+			ff = -1;
+		ch = getchar();
+	}
+	while(ch &gt;= '0' &amp;&amp; ch &lt;= '9')
+		sum = sum * 10 + ch - '0', ch = getchar();
+	return sum * ff;
+}
+
+void write(ll x) {
+	if(x &lt; 0)
+		putchar('-'), x = -x;
+	if(x &gt; 9)
+		write(x / 10);
+	putchar(x % 10 + '0');
+}
+
+const int N = 107;
+int t, n, m;
+bool vis[N][N];
+int ans;
+ 
+int main() {
+//	freopen(&quot;&quot;, &quot;r&quot;, stdin);
+//	freopen(&quot;&quot;, &quot;w&quot;, stdout);
+	t = read();
+	while(t--) {
+		memset(vis, false, sizeof(vis));
+		ans = 0;
+		n = read(), m = read();
+		for(int i = 1; i &lt;= m; i++) {
+			int u = read(), v = read();
+			vis[u][v] = true;
+		}
+		for(int k = 1; k &lt;= n; k++)
+			for(int i = 1; i &lt;= n; i++)
+				for(int j = 1; j &lt;= n; j++)
+					if(vis[i][k] &amp;&amp; vis[k][j])	
+						vis[i][j] = true;
+		for(int i = 1; i &lt;= n; i++) {
+			int in = 0, out = 0;
+			for(int j = 1; j &lt;= n; j++) 
+				in += vis[j][i], out += vis[i][j];
+			ans += in &gt; n / 2 || out &gt; n / 2;
+		}
+		write(ans), puts(&quot;&quot;);
+	}
+	return 0;
+}
+</code></pre>
+<p><a href="https://www.luogu.com.cn/problem/P2419">P2419 [USACO08JAN]Cow Contest S</a></p>
+<p>我们在奶牛之间建边，然后跑 floyd 判断两只奶牛间是否能决定关系，然后统计满足条件的答案即可。</p>
+<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
+using namespace std;
+typedef long long ll;
+
+inline ll read() {
+	ll sum = 0, ff = 1;
+	char ch = getchar();
+	while(ch &lt; '0' || ch &gt; '9') {
+		if(ch == '-')
+			ff = -1;
+		ch = getchar();
+	}
+	while(ch &gt;= '0' &amp;&amp; ch &lt;= '9')
+		sum = sum * 10 + ch - '0', ch = getchar();
+	return sum * ff;
+}
+
+void write(ll x) {
+	if(x &lt; 0)
+		putchar('-'), x = -x;
+	if(x &gt; 9)
+		write(x / 10);
+	putchar(x % 10 + '0');
+}
+
+const int N = 1e2 + 7;
+int n, m, sum, ans;
+bool vis[N][N];
+
+int main() {
+//	freopen(&quot;&quot;, &quot;r&quot;, stdin);
+//	freopen(&quot;&quot;, &quot;w&quot;, stdout);
+	n = read(), m = read();
+	for(int i = 1; i &lt;= m; i++) {
+		int u = read(), v = read();
+		vis[u][v] = true;
+	}
+	for(int k = 1; k &lt;= n; k++)
+		for(int i = 1; i &lt;= n; i++)
+			for(int j = 1; j &lt;= n; j++)
+				if(vis[i][k] &amp;&amp; vis[k][j])
+					vis[i][j] = true;
+	for(int i = 1; i &lt;= n; i++) {
+		sum = 0;
+		for(int j = 1; j &lt;= n; j++)
+			sum += vis[i][j] + vis[j][i];
+		ans += (sum == n - 1);
+	}
+	write(ans);
+	return 0;
+}
+</code></pre>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E4%B8%80-%E7%AE%80%E4%BB%8B">一、简介</a></li>
+<li><a href="#%E4%BA%8C-%E7%AE%97%E6%B3%95">二、算法</a></li>
+<li><a href="#%E4%B8%89-%E4%BB%A3%E7%A0%81">三、代码</a></li>
+<li><a href="#%E5%9B%9B-%E4%BE%8B%E9%A2%98">四、例题</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://zhuyifan314.github.io/post/zui-duan-lu-jing-shu/">
+              <h3 class="post-title">
+                最短路径树
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://zhuyifan314.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

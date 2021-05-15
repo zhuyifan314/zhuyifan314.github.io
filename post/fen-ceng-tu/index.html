@@ -1,0 +1,359 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>分层图 | Creater&#39;s World</title>
+<link rel="shortcut icon" href="https://zhuyifan314.github.io/favicon.ico?v=1621057054762">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://zhuyifan314.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="分层图 | Creater&#39;s World - Atom Feed" href="https://zhuyifan314.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="分层图
+PS：其实分层图是在上图论入门时写的，但在讲进阶也提到过，就加进来了。
+PPS：日报似乎没有分层图，参考肖天的论文再补充一下。
+一、前言
+在 PanH 学长的图论入门里看到了分层图的内容，遂学了一下，写文以记之。
+分层图算是图论中的..." />
+    <meta name="keywords" content="图论,分层图,学习笔记" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://zhuyifan314.github.io">
+  <img class="avatar" src="https://zhuyifan314.github.io/images/avatar.png?v=1621057054762" alt="">
+  </a>
+  <h1 class="site-title">
+    Creater&#39;s World
+  </h1>
+  <p class="site-description">
+    Hello World!
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              分层图
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-05-13
+              </span>
+              <span>
+                6 min read
+              </span>
+              
+                <a href="https://zhuyifan314.github.io/tag/nXSbWQbNs/" class="post-tag">
+                  # 图论
+                </a>
+              
+                <a href="https://zhuyifan314.github.io/tag/EPXdlku54/" class="post-tag">
+                  # 分层图
+                </a>
+              
+                <a href="https://zhuyifan314.github.io/tag/ted_gNn_k/" class="post-tag">
+                  # 学习笔记
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="分层图">分层图</h1>
+<p>PS：其实分层图是在上图论入门时写的，但在讲进阶也提到过，就加进来了。</p>
+<p>PPS：日报似乎没有分层图，参考肖天的论文再补充一下。</p>
+<h2 id="一-前言">一、前言</h2>
+<p>在 PanH 学长的图论入门里看到了分层图的内容，遂学了一下，写文以记之。</p>
+<p>分层图算是图论中的一种技巧，在普通的图论题中加入一些特殊条件时常常可以用到。</p>
+<h2 id="二-用途">二、用途</h2>
+<p>一些图论题目，如最短路等，当题目规定 <strong>图上的边权可以改变</strong>（大多是 <strong>减少</strong>） 时，普通的算法难以发挥作用，就需要用到 <strong>分层图</strong> 的技巧。</p>
+<h2 id="三-思路">三、思路</h2>
+<p>我们考虑怎么来处理修改边权的操作。首先最先想到的显然是枚举修改每一条边，这样的时间复杂度显然是无法承受的，考虑如何优化。</p>
+<p>普通的最短路是在 <strong>二维</strong> 的平面上进行的，而为了处理修改边权的操作，我们将其引入，新增一维，将题目模型转化为了立体的 <strong>三维</strong> 图像，类似于一个世界的平行宇宙这样的概念。</p>
+<p>说得这么玄乎，那到底要怎么实现呢？假设我们可以进行 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span> 次修改边权的操作，就可以 <strong>复制</strong> 原来的平面图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span> 次，一共形成 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 个平面图，第 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 层图就表示进行第 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 次操作后的图。在这么一个立体图中就包含了所有的情况。对于相邻层的图来说，对于边权的修改就决定了它们之间的联系。</p>
+<p>更具体的来说，假设我们有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span> 次操作，操作为将一条边的边权变为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>，求最短路。如图：</p>
+<figure data-type="image" tabindex="1"><img src="https://cdn.luogu.com.cn/upload/image_hosting/wkh1fjbe.png" alt="" loading="lazy"></figure>
+<p>对于每一条边我们都其复制成 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 条边，每一层 <strong>本身</strong> 边权都为 <strong>原来的值</strong>，而在 <strong>连向相邻层</strong> 的边权变为修改后的值（这里是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>），表示该次操作修改这条边的权值。因此，我们最后可以得到每一种情况下的最短路。</p>
+<p>最后还有一个问题：这样复制 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 层图，时间和空间复杂度不会爆炸吗？答案是不会。由于每一层事实上是 <strong>复制</strong> 的，每一层其实都是非常相似的，计算也是几乎相同的，并不需要反复计算，问题的规模并没有变大。</p>
+<h2 id="四-实现">四、实现</h2>
+<ol>
+<li>
+<p>读入每一条边，将其复制为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 层（<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">0,1,2,\ldots,k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span>）；</p>
+</li>
+<li>
+<p>每一层 <strong>自身</strong> 的边权就是 <strong>原来</strong> 的边权，<strong>与相邻的层</strong> 边权为 <strong>修改后</strong> 的边权；</p>
+</li>
+<li>
+<p>接下来按照普通的图论题目做即可；</p>
+</li>
+<li>
+<p>最后统计答案要考虑 <strong>每一层</strong> 的情况。</p>
+</li>
+</ol>
+<h2 id="五-例题">五、例题</h2>
+<p><a href="https://www.luogu.com.cn/problem/P4568">P4568 [JLOI2011]飞行路线</a></p>
+<ol>
+<li>
+<p><strong>题意</strong></p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> 个点，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span> 条边，有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span> 次操作，每次操作可以将一条边权值变为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>，求从出发点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">s</span></span></span></span> 到终点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathdefault">t</span></span></span></span> 的最短路。</p>
+</li>
+<li>
+<p><strong>思路</strong></p>
+<p>就是分层图的板子题。在普通的最短路之上加入了若干次修改权值为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span> 的操作，只需要建 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 层的多层图即可。</p>
+</li>
+<li>
+<p><strong>代码</strong></p>
+</li>
+</ol>
+<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
+using namespace std;
+
+//普通的堆优化Dijkstra求最短路 
+const int N=2e7+7;
+int n,m,k,s,t;
+int dis[N];
+bool vis[N];
+struct edge
+{
+	int to,nxt,dis;
+}e[N];
+int cnt,he[N];
+void add(int u,int v,int w)
+{
+	e[++cnt].to=v;
+	e[cnt].dis=w;
+	e[cnt].nxt=he[u];
+	he[u]=cnt;
+}
+
+ 
+struct node
+{
+	int pos,dis;
+	
+	bool operator &lt; (const node &amp;x)const 
+	{
+		return dis&gt;x.dis;
+	}
+};
+
+priority_queue&lt;node&gt;pq;
+
+void dij()
+{
+	dis[s]=0;
+	pq.push((node){s,0});
+	
+	while(!pq.empty())
+	{
+		int u=pq.top().pos;
+		pq.pop();
+		
+		if(vis[u])
+			continue;
+		vis[u]=true;
+		
+		for(int i=he[u];i;i=e[i].nxt)
+		{
+			int v=e[i].to;
+			if(vis[v])
+				continue;
+			
+			if(dis[v]&gt;dis[u]+e[i].dis)
+				dis[v]=dis[u]+e[i].dis,pq.push((node){v,dis[v]});
+		}
+	}
+}
+
+int main()
+{
+	memset(dis,127,sizeof(dis));
+	
+	scanf(&quot;%d%d%d%d%d&quot;,&amp;n,&amp;m,&amp;k,&amp;s,&amp;t);
+		
+	for(int i=1;i&lt;=m;i++)
+	{
+		int u,v,w;
+		scanf(&quot;%d%d%d&quot;,&amp;u,&amp;v,&amp;w);
+		
+		add(u,v,w);//建初始图 
+		add(v,u,w);
+		
+		for(int j=1;j&lt;=k;j++)//将初始图复制k次 
+		{
+			add(u+j*n,v+j*n,w);//每一层自己到自己边权为初始值 
+			add(v+j*n,u+j*n,w);
+			add(u+j*n-n,v+j*n,0);//与相邻的层边权为0 
+			add(v+j*n-n,u+j*n,0);
+		}
+	}
+	
+	dij();
+	
+	int ans=dis[t];
+	
+	for(int i=1;i&lt;=k;i++)
+		ans=min(ans,dis[t+i*n]);//注意最后答案要在每一层中取最优 
+	
+	printf(&quot;%d&quot;,ans);
+	return 0;
+}
+</code></pre>
+<p><a href="https://www.luogu.com.cn/problem/P3831">P3831 [SHOI2012]回家的路</a></p>
+<p>很妙的一道分层图。因为在换乘前只能横走或竖走，因此想到横纵坐标分开考虑。把换乘车站当成点建图，先按横坐标排序，横坐标相同的点建边，然后建第二张图（具体点编号就是原点编号加上 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span>），以纵坐标排序，纵坐标相同的点建边，然后跑最短路即可。</p>
+<p><strong>其他例题</strong>：</p>
+<ul>
+<li>
+<p><a href="https://www.luogu.com.cn/problem/P1073">P1073 [NOIP2009 提高组] 最优贸易</a>（正解并不是分层图，需要一些转换）</p>
+</li>
+<li>
+<p><a href="https://www.luogu.com.cn/problem/P2939">P2939 [USACO09FEB]Revamping Trails G</a>（模板题）</p>
+</li>
+<li>
+<p><a href="https://www.luogu.com.cn/problem/UVA11374">UVA11374 Airport Express</a>（普通分层图，只是需要 <strong>记录路径</strong>）</p>
+</li>
+<li>
+<p><a href="https://www.luogu.com.cn/problem/P4822">P4822 [BJWC2012]冻结</a>（简单题）</p>
+</li>
+</ul>
+<h2 id="六-参考">六、参考</h2>
+<ul>
+<li>
+<p><a href="https://blog.csdn.net/qq_40736036/article/details/85041838">平土匀值 的博客</a></p>
+</li>
+<li>
+<p>《“分层图思想”及其在信息学竞赛中的应用》</p>
+</li>
+</ul>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E5%88%86%E5%B1%82%E5%9B%BE">分层图</a>
+<ul>
+<li><a href="#%E4%B8%80-%E5%89%8D%E8%A8%80">一、前言</a></li>
+<li><a href="#%E4%BA%8C-%E7%94%A8%E9%80%94">二、用途</a></li>
+<li><a href="#%E4%B8%89-%E6%80%9D%E8%B7%AF">三、思路</a></li>
+<li><a href="#%E5%9B%9B-%E5%AE%9E%E7%8E%B0">四、实现</a></li>
+<li><a href="#%E4%BA%94-%E4%BE%8B%E9%A2%98">五、例题</a></li>
+<li><a href="#%E5%85%AD-%E5%8F%82%E8%80%83">六、参考</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://zhuyifan314.github.io/post/sou-suo-ru-fen/">
+              <h3 class="post-title">
+                搜索入坟
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://zhuyifan314.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
