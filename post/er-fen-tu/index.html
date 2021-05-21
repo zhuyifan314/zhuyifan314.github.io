@@ -1,0 +1,303 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>二分图 | Creater&#39;s World</title>
+<link rel="shortcut icon" href="https://zhuyifan314.github.io/favicon.ico?v=1621602520311">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://zhuyifan314.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="二分图 | Creater&#39;s World - Atom Feed" href="https://zhuyifan314.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="一、定义
+二分图（Bipartite graph），又称二部图。简单来说，即图中的节点有两个集合组成，且两个集合内部没有连边的图。
+
+我们称这两个点集一个叫左部，一个叫右部。左部中的点叫左部点，右部中的点叫右部点。
+二、性质
+
+
+二分图的每..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://zhuyifan314.github.io">
+  <img class="avatar" src="https://zhuyifan314.github.io/images/avatar.png?v=1621602520311" alt="">
+  </a>
+  <h1 class="site-title">
+    Creater&#39;s World
+  </h1>
+  <p class="site-description">
+    Hello World!
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              二分图
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-05-06
+              </span>
+              <span>
+                6 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h2 id="一-定义">一、定义</h2>
+<p>二分图（Bipartite graph），又称二部图。简单来说，即图中的节点有两个集合组成，且两个集合内部没有连边的图。</p>
+<figure data-type="image" tabindex="1"><img src="https://img.imgdb.cn/item/609395e6d1a9ae528f9eefdb.png" alt="如图即为一个二分图" loading="lazy"></figure>
+<p>我们称这两个点集一个叫左部，一个叫右部。左部中的点叫左部点，右部中的点叫右部点。</p>
+<h2 id="二-性质">二、性质</h2>
+<ul>
+<li>
+<p>二分图的每一条边一定连接两个不同集合中的点。</p>
+</li>
+<li>
+<p>二分图中没有节点个数为奇数的环。</p>
+<p>因为每条边都是连接不同集合的点，因此经过一条边一定是从一个集合走到另一个集合，要回到原来的集合形成环一定经历偶数条边。</p>
+</li>
+</ul>
+<h2 id="三-判定">三、判定</h2>
+<h3 id="1方法">（1）方法</h3>
+<p>根据上面的性质，我们可以遍历整张图，若发现奇环，该图就不是二分图，否则的话就是。</p>
+<h3 id="2算法">（2）算法</h3>
+<p>我们可以用染色法。流程大致如下：</p>
+<ol>
+<li>
+<p>用黑白两色标记图中的节点，当一个节点被标记后，它的所有相邻节点都应该被标记为其相反颜色；</p>
+</li>
+<li>
+<p>若标记过程中出现冲突，则说明图中有奇环。</p>
+</li>
+</ol>
+<p>二分图染色一般用 dfs 做，时间复杂度为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>+</mo><mi>m</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n+m)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">m</span><span class="mclose">)</span></span></span></span>。</p>
+<h3 id="3代码">（3）代码</h3>
+<pre><code class="language-cpp">void dfs(int u, int c) {
+    if(!flag)
+        return;
+	col[u] = c;
+	for(int i = he[u]; i; i = e[i].nxt) {
+		int v = e[i].to;
+		if(col[v] == c) {
+			flag = false;
+			return;
+		}	
+		if(!col[v])
+			dfs(v, 3 - c);
+	}	
+} 
+</code></pre>
+<h3 id="4例题">（4）例题</h3>
+<p><a href="https://www.luogu.com.cn/problem/P1155">P1155 [NOIP2008 提高组] 双栈排序</a></p>
+<h2 id="四-应用">四、应用</h2>
+<h3 id="1二分图最大匹配">（1）二分图最大匹配</h3>
+<h3 id="1-定义">1. 定义</h3>
+<ul>
+<li>
+<p><strong>匹配</strong></p>
+<p>图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> 的一个匹配是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> 的一个边集 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>E</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">E_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，满足 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>E</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">E_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 中的所有边没有 公共顶点。</p>
+<p>下图中的红线部分即为图的一个匹配。</p>
+</li>
+</ul>
+<figure data-type="image" tabindex="2"><img src="https://img.imgdb.cn/item/609397cad1a9ae528fb20aab.png" alt="" loading="lazy"></figure>
+<ul>
+<li>
+<p><strong>最大匹配</strong></p>
+<p>一个图的所有匹配中，匹配数最多的匹配。</p>
+</li>
+<li>
+<p><strong>完美匹配</strong></p>
+<p>所有点都属于匹配，同时符合最大匹配。</p>
+</li>
+</ul>
+<h3 id="2-算法">2. 算法</h3>
+<ul>
+<li>
+<p><strong>匈牙利算法</strong></p>
+<p>匈牙利算法的过程是枚举每一个每一个左部点，然后枚举该左部点的出边，对于一个出点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span></span></span></span>，若其没有被先前的左部点匹配，那么直接将 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">u</span></span></span></span> 匹配 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span></span></span></span>，否则的话尝试让 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span></span></span></span> 原来匹配的左部点去匹配其他右部点，若匹配到了其他点，将 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">u</span></span></span></span> 匹配 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span></span></span></span>，否则的话 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">u</span></span></span></span> 匹配。</p>
+<p>算法时间复杂度为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>×</mo><mi>e</mi><mo>+</mo><mi>m</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n\times e + m)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">e</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">m</span><span class="mclose">)</span></span></span></span>，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> 是左部点个数，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>e</mi></mrow><annotation encoding="application/x-tex">e</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">e</span></span></span></span> 是边数，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span> 是右部点个数。</p>
+</li>
+</ul>
+<h3 id="3-代码">3. 代码</h3>
+<pre><code class="language-cpp">bool dfs(int u, int tag) {//二分图匹配 
+	if(book[u] == tag)
+		return false;
+	book[u] = tag;
+	for(int i = he[u]; i; i = e[i].nxt) {
+		int v = e[i].to;
+		if(!match[v] || dfs(match[v], tag)) {
+			match[v] = u;
+			return true;
+		}
+	}
+	return false;
+}
+</code></pre>
+<h3 id="4-例题">4. 例题</h3>
+<p><a href="https://www.luogu.com.cn/problem/P3386">P3386 【模板】二分图最大匹配</a></p>
+<p>模板题。用匈牙利算法来做，枚举每一个左部点，若可以直接和右部点匹配的话就匹配，否则的话就让右部点原先的匹配对象去匹配另外的右部点，匹配不了的话没办法，当前枚举到的左部点就只能失配了。</p>
+<p>至于如何判断失配，加入时间戳以提高效率。具体来说，在匹配当前左部点的时候时间戳就是当前左部点编号，搜索中给搜到的每一个左部点打上时间戳，若在搜索中搜到了一个点的标记等于时间戳，说明无法匹配了，也就失配了。</p>
+<p><a href="https://www.luogu.com.cn/problem/P1640">P1640 [SCOI2010]连续攻击游戏</a></p>
+<p>关键在于建图。我们建立每个物品两个属性值连向其编号的单向边。因为属性值一定是连续的，所以我们从小到大枚举属性值依次判断是否可以匹配，若枚举到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 时无法匹配，则最多只能攻击 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">i-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.74285em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 次。</p>
+<p><a href="https://www.luogu.com.cn/problem/CF1139E">CF1139E Maximize Mex</a></p>
+<p>建立每个学生能力值连向其社团编号的单向边。求 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">mex</mi><mo>⁡</mo></mrow><annotation encoding="application/x-tex">\operatorname{mex}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mop"><span class="mord mathrm">m</span><span class="mord mathrm">e</span><span class="mord mathrm">x</span></span></span></span></span> 的最大值只需从小到大枚举能力值判断是否可以匹配，当我们枚举到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 时，若其无法匹配，则 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">mex</mi><mo>⁡</mo></mrow><annotation encoding="application/x-tex">\operatorname{mex}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mop"><span class="mord mathrm">m</span><span class="mord mathrm">e</span><span class="mord mathrm">x</span></span></span></span></span> 的最大值即为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span>。</p>
+<p>每天都有学生退出社团，我们很难维护这种操作，正难则反，我们倒叙枚举删去的学生，统计完当天的答案后，就将当前枚举的学生加入图中。注意匹配和标记数组初始化应为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord">1</span></span></span></span>，因为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span> 也是能力值。</p>
+<p><a href="https://www.luogu.com.cn/problem/P1129">P1129 [ZJOI2007] 矩阵游戏</a></p>
+<p>发现图论题关键在于如何建图。本题是将每个 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 的横纵坐标相连，再跑二分图的匹配。为什么呢？我们会发现，交换行列其实不会改变什么，同行的还是同行，同列的还是同列，而我们要对角线都为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>，也就是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> 个不同行不同列的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>，那么开始若能完美匹配就满足条件了。</p>
+<p><a href="https://www.luogu.com.cn/problem/P1407">P1407 [国家集训队]稳定婚姻</a></p>
+<p>很显然的一道二分图匹配，关键在于删边。</p>
+<p><a href="https://www.luogu.com.cn/problem/P2756">P2756 飞行员配对方案问题</a></p>
+<p>裸的二分图最大匹配，不过注意数组一定要开够，还有直接记录匹配的点就行了。</p>
+<p><a href="https://www.luogu.com.cn/problem/P2055">P2055 [ZJOI2009]假期的宿舍</a></p>
+<p>根据题意，我们可以将学生当作左部点，床当作右部点，然后就可以跑二分图的最大匹配了，其实还是板子，但是要根据题目要求来建边。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E4%B8%80-%E5%AE%9A%E4%B9%89">一、定义</a></li>
+<li><a href="#%E4%BA%8C-%E6%80%A7%E8%B4%A8">二、性质</a></li>
+<li><a href="#%E4%B8%89-%E5%88%A4%E5%AE%9A">三、判定</a>
+<ul>
+<li><a href="#1%E6%96%B9%E6%B3%95">（1）方法</a></li>
+<li><a href="#2%E7%AE%97%E6%B3%95">（2）算法</a></li>
+<li><a href="#3%E4%BB%A3%E7%A0%81">（3）代码</a></li>
+<li><a href="#4%E4%BE%8B%E9%A2%98">（4）例题</a></li>
+</ul>
+</li>
+<li><a href="#%E5%9B%9B-%E5%BA%94%E7%94%A8">四、应用</a>
+<ul>
+<li><a href="#1%E4%BA%8C%E5%88%86%E5%9B%BE%E6%9C%80%E5%A4%A7%E5%8C%B9%E9%85%8D">（1）二分图最大匹配</a></li>
+<li><a href="#1-%E5%AE%9A%E4%B9%89">1. 定义</a></li>
+<li><a href="#2-%E7%AE%97%E6%B3%95">2. 算法</a></li>
+<li><a href="#3-%E4%BB%A3%E7%A0%81">3. 代码</a></li>
+<li><a href="#4-%E4%BE%8B%E9%A2%98">4. 例题</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://zhuyifan314.github.io/post/sou-suo-ru-fen/">
+              <h3 class="post-title">
+                搜索入坟
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://zhuyifan314.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
