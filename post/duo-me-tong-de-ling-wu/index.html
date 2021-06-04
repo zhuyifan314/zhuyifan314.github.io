@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>多么痛的领悟！ | Creater&#39;s World</title>
-<link rel="shortcut icon" href="https://zhuyifan314.github.io/favicon.ico?v=1622592634036">
+<link rel="shortcut icon" href="https://zhuyifan314.github.io/favicon.ico?v=1622772237490">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://zhuyifan314.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="多么痛的领悟！ | Creater&#39;s World - Atom Feed" href="https://zhuyifan314.github.io/atom.xml">
@@ -13,10 +13,10 @@
 
     <meta name="description" content="多么痛的领悟！记录一下做题时犯的一些错误。
 
-错误：堆优化 dijstra 重载运算符时应为
-bool operator&lt; (const node &amp;x) const {
-    return dis &gt; x.dis;
-..." />
+错误：记忆化搜索时记忆化数组初始化为 000，导致 TLE。
+来源：6.2 模拟赛
+分析：在搜索中 000 也是一种结果，而记忆化时将两者混为一类，导致大量的重复计算。
+解决方法：初始化为一个永..." />
     <meta name="keywords" content="总结" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -26,7 +26,7 @@ bool operator&lt; (const node &amp;x) const {
       <div class="main-content">
         <div class="site-header">
   <a href="https://zhuyifan314.github.io">
-  <img class="avatar" src="https://zhuyifan314.github.io/images/avatar.png?v=1622592634036" alt="">
+  <img class="avatar" src="https://zhuyifan314.github.io/images/avatar.png?v=1622772237490" alt="">
   </a>
   <h1 class="site-title">
     Creater&#39;s World
@@ -86,7 +86,7 @@ bool operator&lt; (const node &amp;x) const {
                 2021-04-18
               </span>
               <span>
-                1 min read
+                2 min read
               </span>
               
                 <a href="https://zhuyifan314.github.io/tag/EoQV368Tt/" class="post-tag">
@@ -101,6 +101,11 @@ bool operator&lt; (const node &amp;x) const {
               <div class="post-content">
                 <p>多么痛的领悟！记录一下做题时犯的一些错误。</p>
 <!-- more -->
+<p><strong>错误</strong>：记忆化搜索时记忆化数组初始化为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>，导致 TLE。</p>
+<p><strong>来源</strong>：6.2 模拟赛</p>
+<p><strong>分析</strong>：在搜索中 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span> 也是一种结果，而记忆化时将两者混为一类，导致大量的重复计算。</p>
+<p><strong>解决方法</strong>：初始化为一个永远选不到的值，比如 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord">1</span></span></span></span>。</p>
+<hr>
 <p><strong>错误</strong>：堆优化 dijstra 重载运算符时应为</p>
 <pre><code class="language-cpp">bool operator&lt; (const node &amp;x) const {
     return dis &gt; x.dis;
@@ -112,15 +117,15 @@ bool operator&lt; (const node &amp;x) const {
 }
 </code></pre>
 <p>就 TLE 了。</p>
-<p><strong>原理</strong>：其实我也不知道。</p>
+<p><strong>分析</strong>：其实我也不知道。</p>
 <hr>
 <p><strong>错误</strong>：重载运算符时没有注意变量顺序，前后弄反了，结果爆蛋了。</p>
-<p><strong>题目</strong>：<a href="https://www.luogu.com.cn/problem/P3216">P3216 [HNOI2011]数学作业<br>
+<p><strong>来源</strong>：<a href="https://www.luogu.com.cn/problem/P3216">P3216 [HNOI2011]数学作业<br>
 </a></p>
 <hr>
 <p><strong>错误</strong>：floyd 中间点没有放在最外面枚举。</p>
+<p><strong>来源</strong>：<a href="https://www.luogu.com.cn/problem/P1850">P1850 [NOIP2016 提高组] 换教室</a></p>
 <p><strong>分析</strong>：因为在 floyd 中边权会改变。</p>
-<p><strong>题目</strong>：<a href="https://www.luogu.com.cn/problem/P1850">P1850 [NOIP2016 提高组] 换教室</a></p>
 <hr>
 <p><strong>错误</strong>：把 <code>==</code> 打成 <code>=</code>。</p>
 <p><strong>来源</strong>：2021.5.4 模拟赛（直接丢失 100 分，一定要注意）。</p>
