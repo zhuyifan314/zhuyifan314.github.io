@@ -1,15 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zhuyifan314.github.io</id>
-    <title>Creater&apos;s World</title>
-    <updated>2021-06-04T04:41:33.080Z</updated>
+    <title>Creator&apos;s World</title>
+    <updated>2021-07-09T23:43:18.245Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zhuyifan314.github.io"/>
     <link rel="self" href="https://zhuyifan314.github.io/atom.xml"/>
     <subtitle>Hello World!</subtitle>
     <logo>https://zhuyifan314.github.io/images/avatar.png</logo>
     <icon>https://zhuyifan314.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Creater&apos;s World</rights>
+    <rights>All rights reserved 2021, Creator&apos;s World</rights>
+    <entry>
+        <title type="html"><![CDATA[暂时想不出名字]]></title>
+        <id>https://zhuyifan314.github.io/post/zan-shi-xiang-bu-chu-ming-zi/</id>
+        <link href="https://zhuyifan314.github.io/post/zan-shi-xiang-bu-chu-ming-zi/">
+        </link>
+        <updated>2021-07-05T11:51:27.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="77">7.7</h2>
+<p><strong><a href="https://www.luogu.com.cn/problem/CF1536C">CF1536C Diluc and Kaeya</a></strong></p>
+<p>我们发现若 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi><mo>=</mo><msub><mi>s</mi><mn>1</mn></msub><mo>+</mo><msub><mi>s</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">s=s_1+s_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.73333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，我们可以得出下面的推论：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>n</mi><msub><mi>s</mi><mn>1</mn></msub></msub><mo>(</mo><mi>D</mi><mo>)</mo><mo>:</mo><msub><mi>n</mi><mi>s</mi></msub><mo>(</mo><mi>K</mi><mo>)</mo><mo>=</mo><msub><mi>n</mi><msub><mi>s</mi><mn>1</mn></msub></msub><mo>(</mo><mi>D</mi><mo>)</mo><mo>:</mo><msub><mi>n</mi><msub><mi>s</mi><mn>2</mn></msub></msub><mo>(</mo><mi>K</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">n_{s_1}(D):n_{s}(K)=n_{s_1}(D):n_{s_2}(K)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0001em;vertical-align:-0.2501em;"></span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139199999999997em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2501em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">s</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.0001em;vertical-align:-0.2501em;"></span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139199999999997em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2501em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.0001em;vertical-align:-0.2501em;"></span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139199999999997em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2501em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="mclose">)</span></span></span></span></span></p>
+<p>因此我们用 map 维护 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>(</mo><mi>D</mi><mo>)</mo><mi mathvariant="normal">/</mi><mi>n</mi><mo>(</mo><mi>K</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">n(D)/n(K)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">n</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="mclose">)</span><span class="mord">/</span><span class="mord mathdefault">n</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="mclose">)</span></span></span></span> 的比值出现个数即可。</p>
+<p><strong><a href="https://www.luogu.com.cn/problem/CF1538F">CF1538F Interesting Function</a></strong></p>
+<p>有个很显然的想法，我们从低位到高位一次计算贡献即可，统计进位。</p>
+<p><strong><a href="https://www.luogu.com.cn/problem/CF1299B">CF1299B Aerodynamic</a></strong></p>
+<p>计算几何。</p>
+<p>我们会发现题目就是让我们判断给出图形是不是偶数边的中心对称图形。如何判断中心对称图形呢？每一个点和它对应点的中点都相同，每个点和它对应点相差 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mi mathvariant="normal">/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">n/2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">n</span><span class="mord">/</span><span class="mord">2</span></span></span></span> 个点。</p>
+<p><strong><a href="https://www.luogu.com.cn/problem/CF1296E2">CF1296E2 String Coloring (hard version)</a></strong></p>
+<p>dp。</p>
+<p>像这种交换邻项元素的我们肯定会想到逆序对，我们发现每一对逆序对它们的颜色一定不同。我们可以把这个转化为另一个模型：将原序列分成多个最长下降子序列，求最小分成几个。直接 dp 即可。</p>
+<h2 id="76">7.6</h2>
+<p><strong>[CF1304D Shortest and Longest LIS](https://www.luogu.com.cn/problem/CF1304D</strong></p>
+<p>构造。</p>
+<p>首先考虑最短的 LIS：连续的 '&lt;' 是 LIS 的下限，我们为了让 LIS 最小，尽量让大的在前面；再考虑最长的 LIS，我们发现 '&gt;' 会减少 LIS，我们为了让 LIS 最大，尽量让小的在前面。</p>
+<p><strong><a href="https://www.luogu.com.cn/problem/CF1316C">CF1316C Primitive Primes</a></strong></p>
+<p>它这个卷积我就看不懂了……不过似乎就是找到一个与它互质的数，加上一个和它不互质的数一定与它互质。</p>
+<p><strong><a href="https://www.luogu.com.cn/problem/P4138">P4138 [JOISC2014] 挂饰</a></strong></p>
+<p>背包。</p>
+<p>我们会发现有些我们是一定要拿的，有些是是一定不拿的，剩下就只有有挂钩但权值为负的、没挂勾但权值为正的，我们背包选到特定挂钩的最大权值，然后就可以做了。</p>
+<h2 id="75">7.5</h2>
+<p><strong><a href="https://www.luogu.com.cn/problem/CF1334D">CF1334D Minimum Euler Cycle</a></strong></p>
+<p>欧拉回路。</p>
+<p>当我们没有思路的时候，一定要去打暴力，可以为正解提供思路。当把一些回路输出来之后我们可以发现规律：回路是形如 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mn>1</mn><mo separator="true">,</mo><mn>3</mn><mo separator="true">,</mo><mn>1</mn><mo separator="true">,</mo><mn>4</mn><mo separator="true">,</mo><mo>⋯</mo><mtext> </mtext><mo separator="true">,</mo><mn>1</mn><mo separator="true">,</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mn>3</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mn>4</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mo>⋯</mo></mrow><annotation encoding="application/x-tex">1,2,1,3,1,4,\cdots,1,n-1,2,3,2,4,2,n-1,\cdots</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">4</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">⋯</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">4</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">⋯</span></span></span></span>，然后根据规律打就好了。</p>
+<p><strong><a href="https://www.luogu.com.cn/problem/CF1328D">CF1328D Carousel</a></strong></p>
+<p>构造、贪心。</p>
+<p>我们发现颜色最多只用涂三种。但所有点类型都相同时，只用涂一种。当 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> 是偶数时交替涂 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span> 就行了。还有若中间有相同的，我们从中间断环成链，把后面的颜色都翻一下，也可以只用两种颜色涂完。否则的话，那就只能用三种颜色了，把最后一个涂成 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span></span></span></span>。</p>
+<p><strong><a href="https://www.luogu.com.cn/problem/CF1327E">CF1327E Count The Blocks</a></strong></p>
+<p>组合计数。</p>
+<p>就是一道计算贡献的题目。考虑长度为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 的块在左右两边的话，那么首先自己有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>10</mn></mrow><annotation encoding="application/x-tex">10</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">0</span></span></span></span> 种可能，而相邻的只能选 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>9</mn></mrow><annotation encoding="application/x-tex">9</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">9</span></span></span></span> 种，剩下的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>−</mo><mi>i</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n-i+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.74285em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 个随便选，就是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><msup><mn>0</mn><mrow><mi>n</mi><mo>−</mo><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">10^{n-i+1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.824664em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mbin mtight">−</span><span class="mord mathdefault mtight">i</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span>，所以这部分的贡献就是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn><mo>×</mo><mn>10</mn><mo>×</mo><mn>9</mn><mo>×</mo><mn>1</mn><msup><mn>0</mn><mrow><mi>n</mi><mo>−</mo><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">2\times 10 \times 9 \times 10^{n-i+1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">9</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.824664em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mbin mtight">−</span><span class="mord mathdefault mtight">i</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span>。再考虑长度为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 的块在中间的话，块的起始点一共有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>−</mo><mi>i</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n-i-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.74285em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 种可能，自己有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>10</mn></mrow><annotation encoding="application/x-tex">10</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">0</span></span></span></span> 种可能，相邻两个只有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>9</mn></mrow><annotation encoding="application/x-tex">9</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">9</span></span></span></span> 种可能，剩下 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>−</mo><mi>i</mi><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n-i-2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.74285em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span> 中随便选，那么这部分的贡献就是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>n</mi><mo>−</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo>)</mo><mo>×</mo><mn>10</mn><mo>×</mo><mn>9</mn><mo>×</mo><mn>9</mn><mo>×</mo><mn>1</mn><msup><mn>0</mn><mrow><mi>n</mi><mo>−</mo><mi>i</mi><mo>−</mo><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">(n-i-1)\times 10 \times 9 \times 9 \times 10^{n-i-2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.74285em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">9</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">9</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.824664em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mbin mtight">−</span><span class="mord mathdefault mtight">i</span><span class="mbin mtight">−</span><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span>。</p>
+<p><strong><a href="https://www.luogu.com.cn/problem/P3079">P3079 [USACO13MAR]Farm Painting S</a></strong></p>
+<p>我用暴力勉强过了……正解似乎要用什么 cdq 分治，之后再说吧。</p>
+<h2 id="74">7.4</h2>
+<p><strong><a href="https://www.luogu.com.cn/problem/CF1335E1">CF1335E1 Three Blocks Palindrome (easy version)</a></strong></p>
+<p>前缀和。</p>
+<p>直接前缀和记录出现次数，然后发现 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">a_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 很小，我们考虑枚举 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">a_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 为中间的最大值。</p>
+<p><strong><a href="https://www.luogu.com.cn/problem/CF1338B">CF1338B Edge Weight Assignment</a></strong></p>
+<p>贪心、树。</p>
+<p>首先最小的话显然若都是偶数只用一种就行了，否则的话需要用三种。至于最大的话，我们发现若几个叶子节点它们的父亲相同，那么它们连向父亲的边权一定相同。</p>
+<p><strong><a href="https://www.luogu.com.cn/problem/CF1355C">CF1355C Count Triangles</a></strong></p>
+<p>差分。</p>
+<p>本题就是不断优化。<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>n</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">n^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span>：直接枚举三条边统计合法的答案。<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>n</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">n^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>：枚举两条边就行了，然后开个桶记录一下，最后算答案。<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>：发现是一个区间在移动，那么差分一下最后统计答案。</p>
+<p><strong><a href="https://www.luogu.com.cn/problem/CF1367D">CF1367D Task On The Board</a></strong></p>
+<p>构造、贪心。</p>
+<p>首先发现为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span> 的那个填最大的一定没问题，然后一直这样做下去就行了。</p>
+<p><strong><a href="https://www.luogu.com.cn/problem/CF1381B">CF1381B Unmerge</a></strong></p>
+<p>性质、背包。</p>
+<p>现在我很纠结，在思考问题本质和找规律中我似乎无法平衡，只能说在充分思考本质后再找规律吧。思考半天想不出来，但是找规律发现对于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">a_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 来说，一直到后面第一个大于它的数之前这一段，一定是在同一个排列中的，那么我们找出这些段，然后用背包判断能否刚好填满即可。不过其实自己还是想到这方面的，但是没有敢确定这点性质。</p>
+<p><strong><a href="https://www.luogu.com.cn/problem/CF460C">CF460C Present</a></strong></p>
+<p>二分。</p>
+<p>看到最大化最小值就想到二分，关键是我们怎么判断我们二分的值 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>i</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">mid</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">d</span></span></span></span> 是否符合条件。首先贪心的思想，我们要让小于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>i</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">mid</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">d</span></span></span></span> 的值都要至少等于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>i</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">mid</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">d</span></span></span></span>，那么我们从前往后扫，对于小于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>i</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">mid</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">d</span></span></span></span> 我们都要进行数次洒使得它等于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>i</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">mid</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">d</span></span></span></span>。不过因为洒的是一个区间，我们还要维护一下区间洒了多少，就不用多洒了。维护一个 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mi>u</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">num</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mord mathdefault">u</span><span class="mord mathdefault">m</span></span></span></span>，表示剩下的洒的次数，若在中途出现 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mi>u</mi><mi>m</mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">num &lt; 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathdefault">n</span><span class="mord mathdefault">u</span><span class="mord mathdefault">m</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>i</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">mid</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">d</span></span></span></span> 就不合法。</p>
+<h2 id="73">7.3</h2>
+<p><strong><a href="https://www.luogu.com.cn/problem/CF1408D">CF1408D Searchlights</a></strong></p>
+<p>dp。</p>
+<p>因为所有海盗是一起移动的，我们设 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>f</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">f_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 表示所有海盗向上 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 步后最少向右移动几步，然后从大到小枚举同时维护后缀最大值 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>a</mi><mi>x</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">maxn</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault">x</span><span class="mord mathdefault">n</span></span></span></span>，答案就是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>min</mi><mo>⁡</mo><mo>(</mo><mi>i</mi><mo>+</mo><mi>m</mi><mi>a</mi><mi>x</mi><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\min(i+maxn)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">min</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault">x</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>，因为这样才能保证所有的海盗都脱离。</p>
+<p><strong><a href="https://www.luogu.com.cn/problem/CF1401D">CF1401D Maximum Distributed Tree</a></strong></p>
+<p>dfs、贪心。</p>
+<p>像这种求 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∑</mo><msub><mi>f</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\sum f_{i,j}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.036108em;vertical-align:-0.286108em;"></span><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> 的题目的套路一定要记住！一般都是转化为求单条边的贡献，每条边被计算的次数是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi><mi>i</mi><mi>z</mi><msub><mi>e</mi><mi>u</mi></msub><mo>×</mo><mo>(</mo><mi>n</mi><mo>−</mo><mi>s</mi><mi>i</mi><mi>z</mi><msub><mi>e</mi><mi>u</mi></msub><mo>)</mo></mrow><annotation encoding="application/x-tex">size_u\times (n-size_u)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.80952em;vertical-align:-0.15em;"></span><span class="mord mathdefault">s</span><span class="mord mathdefault">i</span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">u</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">s</span><span class="mord mathdefault">i</span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">u</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>。然后就是很套路的，大的值乘上大的值一定最大，那么就从小到大匹配就行了。至于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mo>&gt;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">m&gt; n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathdefault">m</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> 的情况，多的都乘到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>p</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">p_n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 就行了。</p>
+<p><strong><a href="https://www.luogu.com.cn/problem/CF1329A">CF1329A Dreamoon Likes Coloring</a></strong></p>
+<p>构造、贪心。</p>
+<p>首先我们可以假设所有颜色都铺满，若这时候还是小于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> 那么无解。否则的话我们我们需要通过调整颜色使得每个颜色至少出现一次以及刚好铺满 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>，那么我们计算总和和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> 的差值，然后考虑每一个颜色都调整即可。</p>
+<p><strong><a href="https://www.luogu.com.cn/problem/CF1400D">CF1400D Zigzags</a></strong></p>
+<p>前缀和。</p>
+<p>看范围知道复杂度最多是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>，那么显然是让我们枚举两个东西，然后剩下的可以直接 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span> 求。发现我们只能去枚举 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>j</mi><mo separator="true">,</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">j,k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span> 这样我们既可以知道 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub><mo separator="true">,</mo><msub><mi>a</mi><mi>l</mi></msub></mrow><annotation encoding="application/x-tex">a_i,a_l</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 的值，同时也知道它们的范围，那么直接前缀和维护一下就好了，然后乘法原理统计答案。</p>
+<p><strong><a href="https://www.luogu.com.cn/problem/T183639?contestId=44371">T183639 操作（2021 CoE III A）</a></strong></p>
+<p>贪心。</p>
+<p>简单贪心，显然逮着最小的那个一直减是最优的，因为这样异或出来加上的就是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>。然后判一下无解的情况就好了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SP898 TRANSMIT - Transmitters]]></title>
+        <id>https://zhuyifan314.github.io/post/sp898-transmit-transmitters/</id>
+        <link href="https://zhuyifan314.github.io/post/sp898-transmit-transmitters/">
+        </link>
+        <updated>2021-06-08T04:43:40.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="一-前言">一、前言</h2>
+<p>本篇题解借鉴了网上的一些思路，并非自己想出来的。在这里只是提供一种不同的方法，也为了加深自己对计算几何的理解。</p>
+<h2 id="二-题意">二、题意</h2>
+<p>给定一个圆的圆心坐标 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">(x,y)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span></span> 以及半径 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span></span>，再给出 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> 个点的坐标。求在这个圆内选择一个半圆，使得半圆覆盖的点数最多。</p>
+<h2 id="三-思路">三、思路</h2>
+<p>首先我们去除没意义的冗杂信息，在这里显然离圆心距离大于半径的点都不需要考虑，因为它们不可能被覆盖。</p>
+<p>然后对于剩下的点，我们发现被半圆覆盖的点实际上满足的是 <strong>它们相对于圆心的极角差最大不超过</strong> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>18</mn><msup><mn>0</mn><mi mathvariant="normal">。</mi></msup></mrow><annotation encoding="application/x-tex">180^。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">8</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.363em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord cjk_fallback mtight">。</span></span></span></span></span></span></span></span></span></span></span>。关于什么是极角，可以参考 <a href="https://baike.baidu.com/item/%E6%9E%81%E8%A7%92/12726003?fr=aladdin">百度百科</a>。那我们就有个想法了：将所有点按它们相对于圆心的极角从小到大排序，然后枚举每一个点，将点看作序列，答案就是序列中最长的满足极角差不超过 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>18</mn><msup><mn>0</mn><mi mathvariant="normal">。</mi></msup></mrow><annotation encoding="application/x-tex">180^。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">8</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.363em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord cjk_fallback mtight">。</span></span></span></span></span></span></span></span></span></span></span> 的子串（即连续区间）。可以用类似双端队列的东西来维护。时间复杂度为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mi>log</mi><mo>⁡</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n\log n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>。</p>
+<p>至于如何求极角，C++ 中有个 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">atan2</mi><mo>⁡</mo></mrow><annotation encoding="application/x-tex">\operatorname{atan2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mop"><span class="mord mathrm">a</span><span class="mord mathrm">t</span><span class="mord mathrm">a</span><span class="mord mathrm">n</span><span class="mord mathrm">2</span></span></span></span></span> 函数。<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">atan2</mi><mo>⁡</mo><mo>(</mo><mi>y</mi><mo separator="true">,</mo><mi>x</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\operatorname{atan2}(y,x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop"><span class="mord mathrm">a</span><span class="mord mathrm">t</span><span class="mord mathrm">a</span><span class="mord mathrm">n</span><span class="mord mathrm">2</span></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span><span class="mclose">)</span></span></span></span> 求的就是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">(x,y)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span></span> 的极角。</p>
+<p>不过还要注意，因为有两个方向：顺时针和逆时针，为了避免答案遗漏，我们要将所有点都复制一遍，复制的极角都加上 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>36</mn><msup><mn>0</mn><mi mathvariant="normal">。</mi></msup></mrow><annotation encoding="application/x-tex">360^。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span><span class="mord">6</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.363em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord cjk_fallback mtight">。</span></span></span></span></span></span></span></span></span></span></span>。因为 C++ 用的是弧度制，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>36</mn><msup><mn>0</mn><mi mathvariant="normal">。</mi></msup><mo>=</mo><mn>2</mn><mo>×</mo><mi>π</mi></mrow><annotation encoding="application/x-tex">360^。=2\times \pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span><span class="mord">6</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.363em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord cjk_fallback mtight">。</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span></span></span></span>，所以要加上 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn><mo>×</mo><mi>π</mi></mrow><annotation encoding="application/x-tex">2\times \pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span></span></span></span>。</p>
+<h2 id="四-代码">四、代码</h2>
+<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
+#define ln puts(&quot;&quot;)
+using namespace std;
+typedef long long ll;
+typedef long double ld;
+ 
+inline ll read() {
+	ll sum = 0, ff = 1;
+	char ch = getchar();
+	while(ch &lt; '0' || ch &gt; '9') {
+		if(ch == '-')
+			ff = -1;
+		ch = getchar();
+	}
+	while(ch &gt;= '0' &amp;&amp; ch &lt;= '9')
+		sum = sum * 10 + ch - '0', ch = getchar();
+	return sum * ff;
+}
+
+const ld PI = acos(-1);
+const ld eps = 1e-18;
+const int N = 1e3 + 7;
+ld x, y, r;
+int n, he, cnt, ans;
+struct node {
+	ld deg;
+	bool operator&lt; (const node &amp;x) const {
+		return deg - x.deg &lt; eps;//相当于 deg &lt; x.deg 
+	}
+}a[N];
+
+ld dis(ld x1, ld y1, ld x2, ld y2) {
+	return (x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2);	
+}
+
+int main() {
+//	freopen(&quot;&quot;, &quot;r&quot;, stdin);
+//	freopen(&quot;&quot;, &quot;w&quot;, stdout);
+	while(scanf(&quot;%Lf%Lf%Lf&quot;, &amp;x, &amp;y, &amp;r) &amp;&amp; r &gt;= 0.0) {
+		ans = cnt = 0;
+		he = 1;
+		n = read();
+		for(int i = 1; i &lt;= n; i++) {
+			ld nx, ny;
+			scanf(&quot;%Lf%Lf&quot;, &amp;nx, &amp;ny);
+			if(dis(nx, ny, x, y) - r * r &lt;= eps)//相当于 dis(nx, ny, x, y) &lt;= r * r 
+				a[++cnt].deg = atan2(ny - y, nx - x);//求相对于原点的极角
+		}
+		for(int i = 1; i &lt;= cnt; i++)
+			a[i + cnt].deg = a[i].deg + 2 * PI;
+		cnt *= 2;
+		sort(a + 1, a + 1 + cnt);
+		for(int i = 1; i &lt;= cnt; i++)
+			if(a[i].deg - a[he].deg - PI &gt; eps)//相当于 a[i].deg - a[he].deg &gt; PI 
+				ans = max(ans, i - he), he++;
+		cout &lt;&lt; ans, ln;
+	}
+	return 0;
+}
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[莫队]]></title>
         <id>https://zhuyifan314.github.io/post/md/</id>
@@ -1266,463 +1422,6 @@ int main() {
 <h3 id="七-参考文献">七、参考文献</h3>
 <p><a href="https://blog.csdn.net/C20190102/article/details/103041769">C++高斯消元详解</a></p>
 <p>算法竞赛入门经典 训练指导</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[多么痛的领悟！]]></title>
-        <id>https://zhuyifan314.github.io/post/duo-me-tong-de-ling-wu/</id>
-        <link href="https://zhuyifan314.github.io/post/duo-me-tong-de-ling-wu/">
-        </link>
-        <updated>2021-04-18T11:48:43.000Z</updated>
-        <summary type="html"><![CDATA[<p>多么痛的领悟！记录一下做题时犯的一些错误。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>多么痛的领悟！记录一下做题时犯的一些错误。</p>
-<!-- more -->
-<p><strong>错误</strong>：记忆化搜索时记忆化数组初始化为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>，导致 TLE。</p>
-<p><strong>来源</strong>：6.2 模拟赛</p>
-<p><strong>分析</strong>：在搜索中 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span> 也是一种结果，而记忆化时将两者混为一类，导致大量的重复计算。</p>
-<p><strong>解决方法</strong>：初始化为一个永远选不到的值，比如 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord">1</span></span></span></span>。</p>
-<hr>
-<p><strong>错误</strong>：堆优化 dijstra 重载运算符时应为</p>
-<pre><code class="language-cpp">bool operator&lt; (const node &amp;x) const {
-    return dis &gt; x.dis;
-}
-</code></pre>
-<p>结果写成了</p>
-<pre><code>bool operator&lt; (const node &amp;x) const {
-    return dis &lt; x.dis;
-}
-</code></pre>
-<p>就 TLE 了。</p>
-<p><strong>分析</strong>：其实我也不知道。</p>
-<hr>
-<p><strong>错误</strong>：重载运算符时没有注意变量顺序，前后弄反了，结果爆蛋了。</p>
-<p><strong>来源</strong>：<a href="https://www.luogu.com.cn/problem/P3216">P3216 [HNOI2011]数学作业<br>
-</a></p>
-<hr>
-<p><strong>错误</strong>：floyd 中间点没有放在最外面枚举。</p>
-<p><strong>来源</strong>：<a href="https://www.luogu.com.cn/problem/P1850">P1850 [NOIP2016 提高组] 换教室</a></p>
-<p><strong>分析</strong>：因为在 floyd 中边权会改变。</p>
-<hr>
-<p><strong>错误</strong>：把 <code>==</code> 打成 <code>=</code>。</p>
-<p><strong>来源</strong>：2021.5.4 模拟赛（直接丢失 100 分，一定要注意）。</p>
-<hr>
-<p><strong>错误</strong>：定义一个 <code>string</code> 类型的变量时没给它分配空间，出现 UB。</p>
-<p><strong>来源</strong>：<a href="https://www.luogu.com.cn/problem/P2730">P2730 [USACO3.2]魔板 Magic Squares</a></p>
-<p><strong>解决方法</strong>：给变量分配空间，如 <code>string ans = &quot;.......&quot;</code>。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[图论起源——欧拉图的相关问题]]></title>
-        <id>https://zhuyifan314.github.io/post/tu-lun-qi-yuan-ou-la-tu-de-xiang-guan-wen-ti/</id>
-        <link href="https://zhuyifan314.github.io/post/tu-lun-qi-yuan-ou-la-tu-de-xiang-guan-wen-ti/">
-        </link>
-        <updated>2021-04-17T23:29:14.000Z</updated>
-        <summary type="html"><![CDATA[<p>图论起源——欧拉图在信息学竞赛中时常出现，本文将简单地介绍一下。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>图论起源——欧拉图在信息学竞赛中时常出现，本文将简单地介绍一下。</p>
-<!-- more -->
-<h2 id="一-引入">一、引入</h2>
-<p>有这么一座城，城里有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>7</mn></mrow><annotation encoding="application/x-tex">7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">7</span></span></span></span> 座桥。问是否有一条路径，可以 <strong>不重复的地走遍 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>7</mn></mrow><annotation encoding="application/x-tex">7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">7</span></span></span></span> 座桥</strong>。这就是著名的 <strong>七桥问题</strong>，在相当长的时间内都无人解答。直到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1736</mn></mrow><annotation encoding="application/x-tex">1736</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">7</span><span class="mord">3</span><span class="mord">6</span></span></span></span> 年，数学家欧拉经过研究发表了论文《哥尼斯堡的七座桥》，给出了解答。如下图：</p>
-<figure data-type="image" tabindex="1"><img src="https://cdn.luogu.com.cn/upload/image_hosting/9hdv5ga2.png" alt="" loading="lazy"></figure>
-<p>他将七桥问题改成第二幅图，那么问题转化为：<strong>能否从无向图的一个顶点出发走出一条道路，每条边恰好经过一次</strong>。满足上述条件的路径叫 <strong>欧拉路径（eulerian path）</strong>，也可以形象的称为“一笔画”。而含有欧拉路径的图叫 <strong>欧拉图</strong>。从那时起，图论作为数学的一个新的分支而诞生。因此，欧拉图可以说是 <strong>图论的起源</strong>，也是图论研究的重要的一部分。</p>
-<p>而在信息学竞赛中，欧拉图也是图论题目的一个基本模型。本文将会详细地讲解欧拉图的 <strong>概念</strong>、<strong>性质</strong>、<strong>判定</strong>、<strong>实现</strong> 以及 <strong>例题</strong>。同时因为本人才疏学浅，如果有何错误请各位指出。</p>
-<h2 id="二-定义">二、定义</h2>
-<p>由于本文会出现一些图论的专业词汇，故给出一些词汇的定义，如果下文有不知道意思的词可以到这里来看。</p>
-<ul>
-<li>
-<p><strong>度</strong>：</p>
-<p>图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> 中与顶点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">u</span></span></span></span> 相连的边数称为图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> 中顶点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">u</span></span></span></span> 的 <strong>度</strong>。特别地，对于有向图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span>，进入顶点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">u</span></span></span></span> 的边的条数称为顶点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">u</span></span></span></span> 的 <strong>入度</strong>；从顶点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">u</span></span></span></span> 引出的边的条数称为顶点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">u</span></span></span></span> 的 <strong>出度</strong>。</p>
-</li>
-<li>
-<p><strong>桥</strong>：</p>
-<p>若删去图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> 中的边 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>e</mi></mrow><annotation encoding="application/x-tex">e</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">e</span></span></span></span> 后，图的连通分量（也就是连通块）数量增加，则称 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>e</mi></mrow><annotation encoding="application/x-tex">e</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">e</span></span></span></span> 为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> 的 <strong>桥</strong>。</p>
-</li>
-<li>
-<p><strong>欧拉路径</strong>：</p>
-<p>通过无向图或者有向图中所有边 <strong>恰好一次</strong>的路径称作 <strong>欧拉路径</strong>。如下图<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mn>1</mn><mo>−</mo><mo>&gt;</mo><mn>2</mn><mo>−</mo><mo>&gt;</mo><mn>3</mn><mo>−</mo><mo>&gt;</mo><mn>4</mn><mo>−</mo><mo>&gt;</mo><mn>2</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">(1-&gt;2-&gt;3-&gt;4-&gt;2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">3</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">4</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mclose">)</span></span></span></span> 即为一条欧拉路径：</p>
-</li>
-</ul>
-<figure data-type="image" tabindex="2"><img src="https://cdn.luogu.com.cn/upload/image_hosting/h09s1sza.png" alt="" loading="lazy"></figure>
-<ul>
-<li>
-<p><strong>欧拉回路</strong>：</p>
-<p>通过无向图或者有向图中所有边 <strong>恰好一次</strong>的 <strong>回路</strong>（相当于一个 <strong>环</strong>） 称作 <strong>欧拉回路</strong>。如下图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mn>1</mn><mo>−</mo><mo>&gt;</mo><mn>2</mn><mo>−</mo><mo>&gt;</mo><mn>3</mn><mo>−</mo><mo>&gt;</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">(1-&gt;2-&gt;3-&gt;1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">3</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span> 即为一条欧拉回路：</p>
-</li>
-</ul>
-<figure data-type="image" tabindex="3"><img src="https://cdn.luogu.com.cn/upload/image_hosting/964u0jah.png" alt="" loading="lazy"></figure>
-<ul>
-<li>
-<p><strong>半欧拉图</strong>：</p>
-<p>有 <strong>欧拉路径</strong> 但没有 <strong>欧拉回路</strong> 的图（无向图或有向图）称为 <strong>半欧拉图</strong>。</p>
-</li>
-<li>
-<p><strong>欧拉图</strong>：</p>
-<p>有 <strong>欧拉回路</strong> 的图（无向图或者有向图）称为 <strong>欧拉图</strong>（简称 E 图）。</p>
-</li>
-</ul>
-<h2 id="三-定理">三、定理</h2>
-<ul>
-<li>
-<p><strong>定理</strong> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>：</p>
-<p>无向图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> 是 <strong>欧拉图</strong>，当且仅当图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> <strong>连通</strong> 且所有顶点的度都是 <strong>偶数</strong>。</p>
-</li>
-</ul>
-<p><strong>证明</strong>：首先证明 <strong>必要性</strong>。由于欧拉路径要遍历每一条边，所以任意两个点都是可以互相到达的，因此若图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> 有欧拉路径，则其一定连通。因为欧拉回路的要求是走遍所有边恰好一次，不难发现，所有点的 <strong>“进出”次数</strong> 应该是一样的（<strong>出</strong> 和 <strong>入</strong>是对应的，一定会成对出现），也就是度数都为 <strong>偶数</strong>。因此若图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> 存在欧拉回路，则图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> 一定连通且所有顶点度都是偶数。</p>
-<p>其次证明 <strong>充分性</strong>。若从图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> 中的任意一点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">u_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 出发沿一条边走向相邻的点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span></span></span></span>，因为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span></span></span></span> 的度数是偶数，一定可以从 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span></span></span></span> 沿一条边走向相邻的点，如此反复，每条边仅经过一次，最终一定会回到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">u_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，得到一个圈 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>C</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">C_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>。若 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>C</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">C_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 就是图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span>，定理得证；否则的话，由于图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> 是连通的，所以在剩下的图中一定有一个和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>C</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">C_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 公共的顶点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>u</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">u_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，从 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>u</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">u_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 出发，和上面的流程类似，一定有一个圈 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>C</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">C_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，将两个圈拼起来任是一个回路。如此反复，一定有一刻得到的图是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span>，定理得证。</p>
-<p>如图：</p>
-<figure data-type="image" tabindex="4"><img src="https://cdn.luogu.com.cn/upload/image_hosting/t23ovyhc.png" alt="" loading="lazy"></figure>
-<ul>
-<li>
-<p><strong>定理</strong> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span>：</p>
-<p>无向图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> 是 <strong>半欧拉图</strong>，当且仅当图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> <strong>连通</strong> 且 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> 中仅有两个 <strong>奇度顶点</strong>。</p>
-</li>
-</ul>
-<p><strong>证明</strong>：将 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> 的两个奇度顶点连接，由定理 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 得 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> 是一个欧拉图，去掉环上的一边就变为了半欧拉图。</p>
-<p>如图：</p>
-<figure data-type="image" tabindex="5"><img src="https://cdn.luogu.com.cn/upload/image_hosting/2sm9g3ui.png" alt="" loading="lazy"></figure>
-<ul>
-<li>
-<p><strong>定理</strong> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span></span></span></span>：</p>
-<p>当有向图 D 的有向边看做无向边时连通，且所有的顶点的 <strong>出度和入度都相等</strong> 时，D 为 <strong>欧拉图</strong>。</p>
-</li>
-</ul>
-<p><strong>证明</strong>：与定理 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 类似。</p>
-<p>如图：</p>
-<figure data-type="image" tabindex="6"><img src="https://cdn.luogu.com.cn/upload/image_hosting/zmmhjdka.png" alt="" loading="lazy"></figure>
-<ul>
-<li>
-<p><strong>定理</strong> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>4</mn></mrow><annotation encoding="application/x-tex">4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span>：</p>
-<p>当有向图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span></span></span></span> 的有向边看做无向边时连通，且除了两个顶点外，<strong>其余顶点的出度与入度都相等</strong>，而这两个顶点中一个顶点的 <strong>出度与入度之差为</strong> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>，另一个顶点的 <strong>出度与入度之差为</strong> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord">1</span></span></span></span> 时，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span></span></span></span> 为 <strong>半欧拉图</strong>。</p>
-</li>
-</ul>
-<p><strong>证明</strong>：同定理 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span> 类似。</p>
-<p>如图：</p>
-<figure data-type="image" tabindex="7"><img src="https://cdn.luogu.com.cn/upload/image_hosting/2hcwkr7i.png" alt="" loading="lazy"></figure>
-<h2 id="四-推论">四、推论</h2>
-<p>由上面的定理我们可以得到一些推论。</p>
-<ul>
-<li>
-<p><strong>推论</strong> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>：</p>
-<p>若无向图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> 连通，且仅有两个奇度顶点，其 <strong>欧拉路径</strong> 一定以这两个顶点为 <strong>端点</strong>。</p>
-</li>
-<li>
-<p><strong>推论</strong> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span>：</p>
-<p>若有向图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span></span></span></span> 连通（指将有向边看做无向边时连通），且除 <strong>出、入度之差为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>、<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord">1</span></span></span></span>的两个顶点</strong> 之外，所有顶点的 <strong>出度与入度都相等</strong>，其 <strong>欧拉路径</strong> 必定以 <strong>出、入之差为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>、<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord">1</span></span></span></span></strong> 的顶点为端点。</p>
-</li>
-<li>
-<p><strong>推论</strong> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span></span></span></span>：</p>
-<p><strong>欧拉图</strong> 中所有点的度数都是 <strong>偶数</strong>。</p>
-</li>
-<li>
-<p><strong>推论</strong> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>4</mn></mrow><annotation encoding="application/x-tex">4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span>：</p>
-<p>对于无向图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> 来说，若其是欧拉图，则其存在 <strong>圈分解</strong>。圈分解即用若干个圈（不重复经过顶点的回路）使图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> 的每一条边恰好经过一次。如下面的欧拉图即可分解为两个圈：</p>
-<figure data-type="image" tabindex="8"><img src="https://cdn.luogu.com.cn/upload/image_hosting/kdrmivkj.png" alt="" loading="lazy"></figure>
-</li>
-</ul>
-<p><strong>证明</strong>：这和上面的定理 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 的证明过程是一样的，事实上，该推论可以描述成 <strong>图中点度数均为偶数等价于存在圈分解</strong>。</p>
-<h2 id="五-判定">五、判定</h2>
-<p>我们再对欧拉图的判定进行一下总结。</p>
-<ol>
-<li>判断 <strong>欧拉路径</strong> 是否存在</li>
-</ol>
-<ul>
-<li>
-<p><strong>无向图</strong>：</p>
-<ul>
-<li>
-<p>连通；</p>
-</li>
-<li>
-<p>只有两个顶点度数为奇数；</p>
-</li>
-<li>
-<p>其余所有顶点度数为偶数。</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>有向图</strong>：</p>
-<ul>
-<li>
-<p>连通；</p>
-</li>
-<li>
-<p>有一个顶点出度比入度大 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>，有一个顶点入度比出度大 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>；</p>
-</li>
-<li>
-<p>其余所有顶点的入度等于出度。</p>
-</li>
-</ul>
-</li>
-</ul>
-<ol start="2">
-<li>判断 <strong>欧拉回路</strong> 是否存在</li>
-</ol>
-<ul>
-<li>
-<p><strong>无向图</strong>：</p>
-<ul>
-<li>
-<p>连通；</p>
-</li>
-<li>
-<p>所有顶点度数都是偶数。</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>有向边</strong>：</p>
-<ul>
-<li>
-<p>连通（指将有向边看做无向边时连通）；</p>
-</li>
-<li>
-<p>所有的顶点入度等于出度。</p>
-</li>
-</ul>
-</li>
-</ul>
-<p>在做题时若需要判断一个图是不是欧拉图，就可以根据上面的几条进行判断。</p>
-<h2 id="六-实现">六、实现</h2>
-<p>前面介绍了这么多，下面我们将会对如何在欧拉图中求出一条欧拉回路进行讲解。</p>
-<p>求欧拉回路主要有两种算法： Fluery 算法和 Hierholzer 算法。本文主要讲解 Hierholzer 算法。</p>
-<ul>
-<li>
-<p><strong>Fluery 算法</strong></p>
-<p>也称避桥法，是一种较暴力的算法。时间复杂度为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>m</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(m^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>， 效率不及 Hierholzer 算法，实用性不高，这里只是稍作介绍。</p>
-<p>简单来说，其算法关键为每次选择下一条边优先选 <strong>不是桥</strong> 的边。</p>
-</li>
-<li>
-<p><strong>Hierholzer 算法</strong></p>
-<p>也称逐步插入回路法。时间复杂度为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>+</mo><mi>m</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n+m)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">m</span><span class="mclose">)</span></span></span></span>，较 Fluery 算法更优，是算法竞赛中最常用的求欧拉路径的算法。</p>
-<p>该算法的思路与定理 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 的证明过程相似。从 <strong>任意一点</strong> 出发，不停沿 <strong>未走过</strong> 的边向前，直到 <strong>无法再走</strong> 为止。这时一定形成了一个回路，但还有边未被访问。这时再从未被访问过的点出发，在从这点走出一个回路，将这个回路与之前的回路 <strong>拼接</strong>。如此反复，直到所有边都被访问过为止。</p>
-<p><strong>流程</strong>：</p>
-<ol>
-<li>
-<p>任选 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> 中的一个顶点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>u</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">u_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，从 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>u</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">u_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 开始 DFS，通过未访问过的边遍历相邻的点。</p>
-</li>
-<li>
-<p>一直到无法遍历为止，将当前的结点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">u</span></span></span></span> 加入路径数组 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span></span></span></span> 中。；</p>
-</li>
-<li>
-<p>一直到所有的边都被访问过，此时的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span></span></span></span> 的 <strong>反序</strong> 即为所求的欧拉回路。</p>
-</li>
-</ol>
-<p>对于此处为何是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span></span></span></span> 的反序做下解释。因为 Hierholzer 算法是不断往下搜索的，直到最后无路可走为止。此时的点（即 <strong>无路可走</strong> 时的顶点）一定是满足条件的。若是正序的话，前面记录的顶点可能在继续往下搜索时不符合条件。因此所求的欧拉回路是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span></span></span></span> 的<strong>反序</strong>。同时由于是反序，我们可以用 <strong>栈</strong> 来记录路径。</p>
-<p>注意，上面是在欧拉图中找欧拉回路，如果说是要找欧拉路径的话，就要记录每个点的度数，从 <strong>奇度</strong> 顶点出发。</p>
-<p>有时候题目并不保证图是连通的，这是就需要提前判断图的连通性，可以用 <strong>并查集</strong> 来做。</p>
-<p><strong>代码</strong>（这里用邻接矩阵实现）：</p>
-</li>
-</ul>
-<pre><code class="language-cpp">void dfs(int u)
-{
-	for(int v=1;v&lt;=n;v++)
-		if(e[u][v])//若有边
-		{
-			e[u][v]--;//删边
-			e[v][u]--;
-			dfs(v);
-		}		
-	s.push(u);	//加入路径
- } 
-</code></pre>
-<h2 id="七-例题">七、例题</h2>
-<ul>
-<li><a href="https://www.luogu.com.cn/problem/P2731">P2731 [USACO3.3]骑马修栅栏 Riding the Fences</a></li>
-</ul>
-<p>本题就是欧拉回路的板子题。需要注意的是：</p>
-<ol>
-<li>
-<p>本题有可能不是欧拉回路而是欧拉路径，那么此时就要从 <strong>度数为奇数</strong> 的点开始。</p>
-</li>
-<li>
-<p>由于最后的答案是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span></span></span></span> 的反序，因此我们可以用栈来存。</p>
-</li>
-<li>
-<p>本题需要输出 <strong>字典序小</strong> 的，因此需要用 vector 进行内部排序。</p>
-</li>
-<li>
-<p>本题最小点不一定是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>，需要进行处理。</p>
-</li>
-</ol>
-<p><strong>代码</strong>：</p>
-<pre><code class="language-cpp">#include&lt;stack&gt;
-#include&lt;vector&gt;
-#include&lt;cstdio&gt;
-#include&lt;algorithm&gt;
-using namespace std;
-const int N=1029;
-int m,u,v;
-int ind[N];//每个点的度数 
-int minn=1e9;//点的最大值和最小值 
-int vis[N][N],cnt;
-vector&lt;int&gt;e[N]; 
-stack&lt;int&gt;s;
-void dfs(int u)
-{
-	for(int i=0;i&lt;e[u].size();i++)
-	{
-		int v=e[u][i];
-		if(vis[u][v])
-		{
-			vis[u][v]--;//删边 
-			vis[v][u]--;
-			dfs(v);
-		}	
-	}
-	s.push(u);
-}
-int main()
-{
-	scanf(&quot;%d&quot;,&amp;m);
-	for(int i=1;i&lt;=m;i++)
-	{
-		scanf(&quot;%d%d&quot;,&amp;u,&amp;v);
-		ind[u]++;
-		ind[v]++;
-		vis[u][v]++;
-		vis[v][u]++;
-		e[u].push_back(v);
-		e[v].push_back(u); 
-		minn=min(minn,min(u,v));
-	}
-	
-	for(int i=minn;i&lt;=m;i++)
-		sort(e[i].begin(),e[i].end());
-		
-	int st=minn;
-	
-	for(int i=minn;i&lt;=m;i++)
-		if(ind[i]%2)
-		{
-			st=i;
-			break;
-		}
-	
-	dfs(st);
-		
-	while(!s.empty())
-	{
-		printf(&quot;%d\n&quot;,s.top());
-		s.pop();
-	}
-	return 0;
-}
-</code></pre>
-<ul>
-<li><a href="https://www.luogu.com.cn/problem/UVA10129">UVA10129 单词 Play on Words</a></li>
-</ul>
-<p><strong>题意</strong>：</p>
-<p>给出 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> 个单词，问是否可以将这些单词排成一个序列，满足每个单词的 <strong>第一个字母</strong> 和上一个单词的 <strong>最后一个字母相等</strong>。</p>
-<p><strong>思路</strong>：</p>
-<p>每个单词的 <strong>首尾字母</strong> 就是图上的 <strong>顶点</strong>，<strong>首尾字母的连线</strong> 即为图上的<strong>边</strong>。题目中的序列实际上就是求恰好经过每一条边的路径，即求 <strong>有向图</strong> 中的 <strong>欧拉路径</strong>。</p>
-<p>至于判断是否存在欧拉路径，根据上文的内容即可解决：首先要判断 <strong>连通性</strong>；其次在 <strong>有向图</strong> 中，要么所有点 <strong>出度等于入度</strong>，要么 <strong>仅有一个顶点出度比入度大 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>，仅有一个顶点入度比出度大</strong> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>。对其进行判断即可。</p>
-<p><strong>代码</strong>：</p>
-<pre><code class="language-cpp">#include&lt;cstdio&gt;
-#include&lt;cstring&gt;
-#include&lt;iostream&gt;
-using namespace std;
-
-const int N=37;
-int t,in[N],out[N],n,u,v,in_num,out_num;
-bool vis[N],e[N][N];
-string s;
-
-void init()
-{
-	in_num=0;
-	out_num=0;
-	memset(vis,false,sizeof(vis));
-	memset(e,false,sizeof(e));
-	memset(in,0,sizeof(in));
-	memset(out,0,sizeof(out));
-}
-
-void dfs(int u)
-{
-	vis[u]=false;//搜索时将访问过的点标记为false 
-	for(int i=1;i&lt;=26;i++)
-		if(e[u][i]&amp;&amp;vis[i])
-			dfs(i);
-}
-
-bool check()
-{
-	init();
-	
-	for(int i=1;i&lt;=n;i++)
-	{
-		cin&gt;&gt;s;
-		u=s[0]-'a'+1;
-		v=s[s.size()-1]-'a'+1;
-		e[u][v]=e[v][u]=true;//边 
-		vis[u]=vis[v]=true;//判断连通性 
-		out[u]++;//出度 
-		in[v]++;//入度 
-	}
-	
-	dfs(u);
-	
-	for(int i=1;i&lt;=26;i++)
-	{
-		if(vis[i])//如果不连通，不存在欧拉路径 
-			return false;
-		if(in[i]-out[i]==1)//入度比出度大1的点
-			out_num++;
-		else if(in[i]-out[i]==-1)//出度比入度大1的点
-			in_num++;
-		else if(in[i]!=out[i])//除此之外的都不是欧拉路径
-			return false;		
-}
-	if((in_num==1&amp;&amp;out_num==1)||(in_num==0&amp;&amp;out_num==0))
-		return true;
-	
-	return false;
-}
-
-
-int main()
-{
-	scanf(&quot;%d&quot;,&amp;t);
-	while(t--)
-	{
-		scanf(&quot;%d&quot;,&amp;n);
-		if(check())
-			printf(&quot;Ordering is possible.\n&quot;);
-		else
-			printf(&quot;The door cannot be opened.\n&quot;);
-	}
-	return 0;
-}
-</code></pre>
-<ul>
-<li><strong>其他例题</strong>：</li>
-</ul>
-<p><a href="https://www.luogu.com.cn/problem/P1341">P1341 无序字母对</a>（找出 <strong>字典序最小</strong> 的欧拉回路）</p>
-<p><a href="https://www.luogu.com.cn/problem/P3520">P3520 [POI2011]SMI-Garbage</a>（无向图中找欧拉回路）</p>
-<p><a href="https://www.luogu.com.cn/problem/P6066">P6066 [USACO05JAN]Watchcow S</a></p>
-<p>把一条无向边当作两条有向边做即可。</p>
-<h2 id="八-参考文献">八、参考文献</h2>
-<ul>
-<li>
-<p>2018国家集训队论文 《欧拉图相关的生成与计数问题探究》—— 陈通</p>
-</li>
-<li>
-<p><a href="https://oi-wiki.org/graph/euler/#_6">oi-wiki</a></p>
-</li>
-<li>
-<p><a href="https://www.cnblogs.com/wkfvawl/p/9626163.html">王陸 的博客</a></p>
-</li>
-<li>
-<p><a href="https://blog.csdn.net/qq_35649707/article/details/75578102">DZYO 的博客</a></p>
-</li>
-</ul>
-<h2 id="九-后记">九、后记</h2>
-<p>事实上，欧拉图还有更多有趣的性质和问题，本文只是窥探了其冰山一角，希望能起到抛砖引玉的作用。</p>
-<p>感谢 @<a href="https://www.luogu.com.cn/user/228866">爱彩虹的牛</a>一直以来对我的支持和帮助。</p>
-<p>感谢 @<a href="https://www.luogu.com.cn/user/40318">Acfboy</a> 给我提出的的宝贵意见。</p>
-<p>感谢 @<a href="https://www.luogu.com.cn/user/304995">PanH</a> 学长对我的指导。</p>
 ]]></content>
     </entry>
 </feed>
