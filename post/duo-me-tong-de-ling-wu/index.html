@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>多么痛的领悟！ | Creator&#39;s World</title>
-<link rel="shortcut icon" href="https://zhuyifan314.github.io/favicon.ico?v=1626054719836">
+<link rel="shortcut icon" href="https://zhuyifan314.github.io/favicon.ico?v=1626923011951">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://zhuyifan314.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="多么痛的领悟！ | Creator&#39;s World - Atom Feed" href="https://zhuyifan314.github.io/atom.xml">
@@ -13,11 +13,8 @@
 
     <meta name="description" content="多么痛的领悟！记录一下做题时犯的一些错误。
 
-错误：一道题有想法时自以为过不了，结果就没打。
-来源：AtCoder Beginner Contest 208。
-解决方法：以后有想法了一定要去打，就算真的过不了也可以当作暴力。
-
-错误：记忆化..." />
+错误：在更新一些数值的时候（比如 dp 转移时）因为开始给数值赋过值，所以在更新时不能直接写 ===，而要写 +=+=+=。
+来源：P2922 [USACO08DEC]Secret Messag..." />
     <meta name="keywords" content="总结" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -27,7 +24,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://zhuyifan314.github.io">
-  <img class="avatar" src="https://zhuyifan314.github.io/images/avatar.png?v=1626054719836" alt="">
+  <img class="avatar" src="https://zhuyifan314.github.io/images/avatar.png?v=1626923011951" alt="">
   </a>
   <h1 class="site-title">
     Creator&#39;s World
@@ -102,6 +99,13 @@
               <div class="post-content">
                 <p>多么痛的领悟！记录一下做题时犯的一些错误。</p>
 <!-- more -->
+<p><strong>错误</strong>：在更新一些数值的时候（比如 dp 转移时）因为开始给数值赋过值，所以在更新时不能直接写 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>=</mo></mrow><annotation encoding="application/x-tex">=</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span></span></span></span>，而要写 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>+</mo><mo>=</mo></mrow><annotation encoding="application/x-tex">+=</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord">+</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span></span></span></span>。</p>
+<p><strong>来源</strong>：<a href="https://www.luogu.com.cn/problem/P2922?contestId=47632">P2922 [USACO08DEC]Secret Message G</a></p>
+<hr>
+<p><strong>错误</strong>：在减法取模时出现负数。</p>
+<p><strong>来源</strong>：2021.7.21 模拟赛 T1，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>100</mn><mo>←</mo><mn>70</mn></mrow><annotation encoding="application/x-tex">100 \leftarrow 70</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">←</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">7</span><span class="mord">0</span></span></span></span>。</p>
+<p><strong>解决方法</strong>：以后取模时候出现减法的话一定要加上模数，一定！以防万一。</p>
+<hr>
 <p><strong>错误</strong>：一道题有想法时自以为过不了，结果就没打。</p>
 <p><strong>来源</strong>：AtCoder Beginner Contest 208。</p>
 <p><strong>解决方法</strong>：以后有想法了一定要去打，就算真的过不了也可以当作暴力。</p>
