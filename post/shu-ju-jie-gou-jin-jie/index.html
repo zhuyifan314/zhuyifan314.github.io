@@ -1,0 +1,327 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>数据结构进阶 | Creator&#39;s World</title>
+<link rel="shortcut icon" href="https://zhuyifan314.github.io/favicon.ico?v=1629205949964">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://zhuyifan314.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="数据结构进阶 | Creator&#39;s World - Atom Feed" href="https://zhuyifan314.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="题目
+这里是 sxy 给的题目。
+线段树:
+CF240F
+CF242E
+CF343D
+CF383C
+CF414C
+CF431E
+CF438D
+CF446C
+CF490F
+CF515E
+CF522D
+CF558E
+CF594D
+CF600E
+..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://zhuyifan314.github.io">
+  <img class="avatar" src="https://zhuyifan314.github.io/images/avatar.png?v=1629205949964" alt="">
+  </a>
+  <h1 class="site-title">
+    Creator&#39;s World
+  </h1>
+  <p class="site-description">
+    Hello World!
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              数据结构进阶
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-05-24
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h2 id="题目">题目</h2>
+<p>这里是 sxy 给的题目。</p>
+<p>线段树:<br>
+CF240F<br>
+CF242E<br>
+CF343D<br>
+CF383C<br>
+CF414C<br>
+CF431E<br>
+CF438D<br>
+CF446C<br>
+CF490F<br>
+CF515E<br>
+CF522D<br>
+CF558E<br>
+CF594D<br>
+CF600E<br>
+CF620E<br>
+CF718C<br>
+CF739C<br>
+CF786B<br>
+CF803G<br>
+CF817F<br>
+CF840D<br>
+CF877E<br>
+CF911G<br>
+CF915E<br>
+CF920F<br>
+CF992E<br>
+CF1000F<br>
+CF1004F<br>
+CF1114F<br>
+CF1149C<br>
+CF1260F<br>
+P1047<br>
+P1276<br>
+P1438<br>
+P1471<br>
+P1505<br>
+P1531<br>
+P1637<br>
+P1856<br>
+P1908<br>
+P2023<br>
+P2146<br>
+P2184<br>
+P2486<br>
+P2572<br>
+P2824<br>
+P2894<br>
+P3178<br>
+P3224<br>
+P3300<br>
+P3369<br>
+P3372<br>
+P3373<br>
+P3384<br>
+P3437<br>
+P3521<br>
+P3833<br>
+P3979<br>
+P4062<br>
+P4114<br>
+P4145<br>
+P4247<br>
+P4314<br>
+P4556<br>
+P4588<br>
+P4839<br>
+P5057<br>
+P5142<br>
+P5459<br>
+P5490<br>
+P5494<br>
+P6157<br>
+P6186<br>
+P6242<br>
+P6327<br>
+P6492<br>
+SP1043<br>
+SP1557<br>
+SP1716<br>
+SP2713<br>
+SP2916</p>
+<p>莫队:<br>
+SP10707 ✔️<br>
+AT1219✔️<br>
+CF617E✔️<br>
+CF375D✔️<br>
+CF86D✔️<br>
+P4689<br>
+P4887<br>
+P5047<br>
+P4688<br>
+P5268<br>
+P4074✔️<br>
+P5906<br>
+P3709✔️<br>
+P4462✔️<br>
+P4867✔️</p>
+<p>分块:✔️<br>
+CF455D✔️<br>
+CF551E✔️<br>
+CF925E✔️<br>
+P5048✔️<br>
+P4168✔️<br>
+P3203✔️</p>
+<p>可持久化线段树:<br>
+CF484E✔️<br>
+CF1422F<br>
+P3834✔️<br>
+P3919✔️<br>
+P3402<br>
+P2633✔️<br>
+P1972✔️<br>
+P1383✔️<br>
+P3168<br>
+P3567<br>
+P2468<br>
+P6071<br>
+P3302<br>
+P4137✔️<br>
+SP10628<br>
+SP11470✔️</p>
+<p>trie:<br>
+CF888G<br>
+CF842D<br>
+CF840E<br>
+CF706D<br>
+CF665E<br>
+CF241B</p>
+<p>树套树:<br>
+P1975<br>
+P2617<br>
+P3332<br>
+P3380<br>
+P6749<br>
+P3157<br>
+UVA11990</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E9%A2%98%E7%9B%AE">题目</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://zhuyifan314.github.io/post/md/">
+              <h3 class="post-title">
+                莫队
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://zhuyifan314.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
