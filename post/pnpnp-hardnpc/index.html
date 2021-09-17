@@ -1,0 +1,231 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>P、NP、NP-hard、NPC | Creator&#39;s World</title>
+<link rel="shortcut icon" href="https://zhuyifan314.github.io/favicon.ico?v=1631863168759">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://zhuyifan314.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="P、NP、NP-hard、NPC | Creator&#39;s World - Atom Feed" href="https://zhuyifan314.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="一、时间复杂度
+
+
+多项式复杂度：规模 nnn在底数位置上或者常数级复杂度。如 O(1)、O(n)、O(nlog⁡n)、O(n2)O(1)、O(n)、O(n\log n)、O(n^2)O(1)、O(n)、O(nlogn)、O(n2) 等。
+..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://zhuyifan314.github.io">
+  <img class="avatar" src="https://zhuyifan314.github.io/images/avatar.png?v=1631863168759" alt="">
+  </a>
+  <h1 class="site-title">
+    Creator&#39;s World
+  </h1>
+  <p class="site-description">
+    Hello World!
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              P、NP、NP-hard、NPC
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-09-16
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h2 id="一-时间复杂度">一、时间复杂度</h2>
+<ol>
+<li>
+<p><strong>多项式复杂度</strong>：规模 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>在底数位置上或者常数级复杂度。如 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo><mi mathvariant="normal">、</mi><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo><mi mathvariant="normal">、</mi><mi>O</mi><mo>(</mo><mi>n</mi><mi>log</mi><mo>⁡</mo><mi>n</mi><mo>)</mo><mi mathvariant="normal">、</mi><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)、O(n)、O(n\log n)、O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span><span class="mord cjk_fallback">、</span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span><span class="mord cjk_fallback">、</span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">n</span><span class="mclose">)</span><span class="mord cjk_fallback">、</span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> 等。</p>
+</li>
+<li>
+<p><strong>非多项式级复杂度</strong>：规模 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> 在指数位置上的复杂度。如 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mn>2</mn><mi>n</mi></msup><mo>)</mo><mi mathvariant="normal">、</mi><mi>O</mi><mo>(</mo><mi>n</mi><mo>!</mo><mo>)</mo></mrow><annotation encoding="application/x-tex">O(2^n)、O(n!)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mord cjk_fallback">、</span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">!</span><span class="mclose">)</span></span></span></span>。</p>
+</li>
+</ol>
+<h2 id="二-p-问题">二、P 问题</h2>
+<ol>
+<li><strong>定义</strong>：<strong>存在</strong> 多项式复杂度算法的问题。</li>
+</ol>
+<h2 id="三-np-问题">三、NP 问题</h2>
+<ol>
+<li>
+<p>NP 问题 <strong>不是</strong> 非 P 问题。</p>
+</li>
+<li>
+<p><strong>定义</strong>：一个问题的一个解可以用多项式级复杂度 <strong>检验</strong>，它就是 NP 问题。</p>
+</li>
+<li>
+<p>找不到多项式复杂度解的（非 P 问题）<strong>不一定</strong> 是 NP 问题，因为有可能无法在多项式复杂度中检验一个解。</p>
+</li>
+<li>
+<p><strong>P <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∈</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">∈</span></span></span></span> NP</strong>。</p>
+</li>
+</ol>
+<h2 id="四-np-hard-问题">四、NP-hard 问题</h2>
+<ol>
+<li>
+<p><strong>定义</strong>：如果有一个问题可以使所有 NP 问题在多项式复杂度内 <strong>归纳</strong> 到它（相当于转化到它），那么它就是 NP-hard 问题。若难度有上线，解决 NP-hard 问题的难度就是这个上限，这是名字的由来。</p>
+</li>
+<li>
+<p>NP-hard 问题 <strong>不一定</strong> 是 NP 问题。</p>
+</li>
+<li>
+<p>常见的 NP-hard 问题有 <strong>停机问题</strong>。</p>
+</li>
+</ol>
+<h2 id="五-npc-问题">五、NPC 问题</h2>
+<ol>
+<li>
+<p><strong>定义</strong>：一个 <strong>NP 问题</strong> 可以使所有 NP 问题在多项式复杂度内归约到它，那它就是 NPC 问题。</p>
+</li>
+<li>
+<p>NPC 是 NP 和 NP-hard 的交集。</p>
+</li>
+<li>
+<p>常见的 NPC 问题有 <strong>3-SAT</strong>、<strong>旅行商问题</strong> 等。</p>
+</li>
+</ol>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E4%B8%80-%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6">一、时间复杂度</a></li>
+<li><a href="#%E4%BA%8C-p-%E9%97%AE%E9%A2%98">二、P 问题</a></li>
+<li><a href="#%E4%B8%89-np-%E9%97%AE%E9%A2%98">三、NP 问题</a></li>
+<li><a href="#%E5%9B%9B-np-hard-%E9%97%AE%E9%A2%98">四、NP-hard 问题</a></li>
+<li><a href="#%E4%BA%94-npc-%E9%97%AE%E9%A2%98">五、NPC 问题</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://zhuyifan314.github.io/post/zhu-ding-li/">
+              <h3 class="post-title">
+                主定理
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://zhuyifan314.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
